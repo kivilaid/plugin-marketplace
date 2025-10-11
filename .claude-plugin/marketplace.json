@@ -5,7 +5,7 @@
     "email": "ando@kivilaid.ee"
   },
   "metadata": {
-    "description": "Example Claude Code plugin marketplace showcasing all plugin component types",
+    "description": "Claude Code plugin marketplace featuring productivity tools with Git automation, code review, and testing capabilities",
     "version": "1.0.0",
     "pluginRoot": "./plugins"
   },
@@ -13,7 +13,7 @@
     {
       "name": "example-full-featured",
       "source": "./plugins/example-full-featured",
-      "description": "A complete example plugin demonstrating all component types: commands, agents, hooks, and MCP servers",
+      "description": "Full-featured productivity plugin with Git workflow automation, code review agents, test generation, validation hooks, and example MCP server",
       "version": "1.0.0",
       "author": {
         "name": "ando",
@@ -22,9 +22,9 @@
       "homepage": "https://github.com/kivilaid/plugin-marketplace",
       "repository": "https://github.com/kivilaid/plugin-marketplace",
       "license": "MIT",
-      "keywords": ["example", "demo", "full-featured", "tutorial"],
+      "keywords": ["git", "workflow", "automation", "code-review", "testing", "productivity"],
       "category": "productivity",
-      "tags": ["example", "complete", "demo"]
+      "tags": ["git", "productivity", "automation", "workflow"]
     }
   ]
 }

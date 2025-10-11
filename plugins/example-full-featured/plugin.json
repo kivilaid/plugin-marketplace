@@ -1,7 +1,7 @@
 {
   "name": "example-full-featured",
   "version": "1.0.0",
-  "description": "A complete example plugin demonstrating all component types: commands, agents, hooks, and MCP servers",
+  "description": "Full-featured productivity plugin with Git workflow automation, code review agents, test generation, validation hooks, and example MCP server",
   "author": {
     "name": "ando",
     "email": "ando@kivilaid.ee"
@@ -9,7 +9,7 @@
   "homepage": "https://github.com/kivilaid/plugin-marketplace",
   "repository": "https://github.com/kivilaid/plugin-marketplace",
   "license": "MIT",
-  "keywords": ["example", "demo", "full-featured", "tutorial"],
+  "keywords": ["git", "workflow", "automation", "code-review", "testing", "productivity"],
   "commands": [
     "./commands/clean_gone.md",
     "./commands/commit-push-pr.md",

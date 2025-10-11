@@ -1,17 +1,18 @@
 # Claude Code Plugin Marketplace
 
-An example marketplace showcasing how to create and distribute Claude Code plugins with all component types.
+A curated plugin marketplace featuring productivity tools with Git workflow automation, code review agents, and testing capabilities.
 
 ## Overview
 
-This repository demonstrates a complete Claude Code plugin marketplace setup, including:
+This marketplace provides production-ready plugins for Claude Code, featuring:
 
-- **Marketplace configuration** (`.claude-plugin/marketplace.json`)
-- **Example plugin** with all component types:
-  - Custom slash commands
-  - Specialized agents
-  - Event hooks
-  - MCP servers
+- **Git Workflow Automation** - Streamline commits, PRs, and branch management
+- **Code Review Agents** - Thorough code review with best practices analysis
+- **Test Generation** - Comprehensive test suite creation for multiple frameworks
+- **Validation Hooks** - Automatic syntax validation on file changes
+- **MCP Server Examples** - Reference implementation for custom integrations
+
+Perfect for teams wanting to boost productivity with automated workflows and AI-powered code assistance.
 
 ## Quick Start
 
@@ -33,9 +34,9 @@ This repository demonstrates a complete Claude Code plugin marketplace setup, in
 
 ## Available Plugins
 
-### Example Full-Featured Plugin
+### Full-Featured Productivity Plugin
 
-A comprehensive demonstration plugin showcasing all component types.
+Production-ready plugin with Git automation, code review, testing, and validation capabilities.
 
 **Components:**
 
