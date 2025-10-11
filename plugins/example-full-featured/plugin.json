@@ -11,8 +11,9 @@
   "license": "MIT",
   "keywords": ["example", "demo", "full-featured", "tutorial"],
   "commands": [
-    "./commands/hello.md",
-    "./commands/deploy.md"
+    "./commands/clean_gone.md",
+    "./commands/commit-push-pr.md",
+    "./commands/commit.md"
   ],
   "agents": [
     "./agents/code-reviewer.md",

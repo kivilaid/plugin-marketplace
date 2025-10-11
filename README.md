@@ -40,8 +40,9 @@ A comprehensive demonstration plugin showcasing all component types.
 **Components:**
 
 - **Commands:**
-  - `/hello` - Friendly greeting with system info
-  - `/deploy` - Deployment checklist helper
+  - `/clean_gone` - Cleans up git branches marked as [gone]
+  - `/commit-push-pr` - Commit, push, and open a PR
+  - `/commit` - Create a git commit
 
 - **Agents:**
   - `code-reviewer` - Thorough code review specialist
@@ -63,8 +64,9 @@ plugin-marketplace/
 │   └── example-full-featured/    # Example plugin
 │       ├── plugin.json           # Plugin manifest
 │       ├── commands/             # Slash commands
-│       │   ├── hello.md
-│       │   └── deploy.md
+│       │   ├── clean_gone.md
+│       │   ├── commit-push-pr.md
+│       │   └── commit.md
 │       ├── agents/               # Specialized agents
 │       │   ├── code-reviewer.md
 │       │   └── test-generator.md
