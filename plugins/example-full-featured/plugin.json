@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "A complete example plugin demonstrating all component types: commands, agents, hooks, and MCP servers",
   "author": {
-    "name": "Ando",
-    "email": "ando@example.com"
+    "name": "ando",
+    "email": "ando@kivilaid.ee"
   },
-  "homepage": "https://github.com/ando/plugin-marketplace",
-  "repository": "https://github.com/ando/plugin-marketplace",
+  "homepage": "https://github.com/kivilaid/plugin-marketplace",
+  "repository": "https://github.com/kivilaid/plugin-marketplace",
   "license": "MIT",
   "keywords": ["example", "demo", "full-featured", "tutorial"],
   "commands": [

@@ -1,8 +1,8 @@
 {
   "name": "example-marketplace",
   "owner": {
-    "name": "Ando",
-    "email": "ando@example.com"
+    "name": "ando",
+    "email": "ando@kivilaid.ee"
   },
   "metadata": {
     "description": "Example Claude Code plugin marketplace showcasing all plugin component types",
@@ -16,11 +16,11 @@
       "description": "A complete example plugin demonstrating all component types: commands, agents, hooks, and MCP servers",
       "version": "1.0.0",
       "author": {
-        "name": "Ando",
-        "email": "ando@example.com"
+        "name": "ando",
+        "email": "ando@kivilaid.ee"
       },
-      "homepage": "https://github.com/ando/plugin-marketplace",
-      "repository": "https://github.com/ando/plugin-marketplace",
+      "homepage": "https://github.com/kivilaid/plugin-marketplace",
+      "repository": "https://github.com/kivilaid/plugin-marketplace",
       "license": "MIT",
       "keywords": ["example", "demo", "full-featured", "tutorial"],
       "category": "productivity",

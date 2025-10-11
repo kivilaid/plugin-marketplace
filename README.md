@@ -18,8 +18,8 @@ This repository demonstrates a complete Claude Code plugin marketplace setup, in
 ### Add this marketplace to Claude Code
 
 ```bash
-# Add from GitHub (once published)
-/plugin marketplace add your-username/plugin-marketplace
+# Add from GitHub
+/plugin marketplace add kivilaid/plugin-marketplace
 
 # Or add locally for development
 /plugin marketplace add /path/to/plugin-marketplace
