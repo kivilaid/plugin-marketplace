@@ -13,10 +13,10 @@ on:
 jobs:
   claude:
     if: |
-      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude')) ||
-      (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@claude')) ||
-      (github.event_name == 'pull_request_review' && contains(github.event.review.body, '@claude')) ||
-      (github.event_name == 'issues' && (contains(github.event.issue.body, '@claude') || contains(github.event.issue.title, '@claude')))
+      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@aiboss')) ||
+      (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@aiboss')) ||
+      (github.event_name == 'pull_request_review' && contains(github.event.review.body, '@aiboss')) ||
+      (github.event_name == 'issues' && (contains(github.event.issue.body, '@aiboss') || contains(github.event.issue.title, '@aiboss')))
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -35,6 +35,15 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+
+          # Configure trigger settings
+          trigger_phrase: '@aiboss'
+          assignee_trigger: 'aiboss'
+          label_trigger: 'aiboss'
+
+          # Configure bot settings
+          bot_name: 'aiboss[bot]'
+          allowed_bots: '*'
 
           # This is an optional setting that allows Claude to read CI results on PRs
           additional_permissions: |
