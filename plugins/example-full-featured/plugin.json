@@ -1,0 +1,31 @@
+{
+  "name": "example-full-featured",
+  "version": "1.0.0",
+  "description": "A complete example plugin demonstrating all component types: commands, agents, hooks, and MCP servers",
+  "author": {
+    "name": "Ando",
+    "email": "ando@example.com"
+  },
+  "homepage": "https://github.com/ando/plugin-marketplace",
+  "repository": "https://github.com/ando/plugin-marketplace",
+  "license": "MIT",
+  "keywords": ["example", "demo", "full-featured", "tutorial"],
+  "commands": [
+    "./commands/hello.md",
+    "./commands/deploy.md"
+  ],
+  "agents": [
+    "./agents/code-reviewer.md",
+    "./agents/test-generator.md"
+  ],
+  "hooks": "./hooks/hooks.json",
+  "mcpServers": {
+    "example-server": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp-servers/example-server.js"],
+      "env": {
+        "EXAMPLE_VAR": "example-value"
+      }
+    }
+  }
+}

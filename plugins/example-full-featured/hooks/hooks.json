@@ -1,0 +1,14 @@
+{
+  "PostToolUse": [
+    {
+      "matcher": "Write|Edit",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "${CLAUDE_PLUGIN_ROOT}/hooks/validate.sh",
+          "args": ["{{file_path}}"]
+        }
+      ]
+    }
+  ]
+}
