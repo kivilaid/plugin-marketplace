@@ -13,10 +13,10 @@ on:
 jobs:
   claude:
     if: |
-      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@aiboss')) ||
-      (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@aiboss')) ||
-      (github.event_name == 'pull_request_review' && contains(github.event.review.body, '@aiboss')) ||
-      (github.event_name == 'issues' && (contains(github.event.issue.body, '@aiboss') || contains(github.event.issue.title, '@aiboss')))
+      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@AndoAI')) ||
+      (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@AndoAI')) ||
+      (github.event_name == 'pull_request_review' && contains(github.event.review.body, '@AndoAI')) ||
+      (github.event_name == 'issues' && (contains(github.event.issue.body, '@AndoAI') || contains(github.event.issue.title, '@AndoAI')))
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -37,12 +37,12 @@ jobs:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
 
           # Configure trigger settings
-          trigger_phrase: '@aiboss'
-          assignee_trigger: 'aiboss'
-          label_trigger: 'aiboss'
+          trigger_phrase: '@AndoAI'
+          assignee_trigger: 'AndoAI'
+          label_trigger: 'AndoAI'
 
           # Configure bot settings
-          bot_name: 'aiboss[bot]'
+          bot_name: 'AndoAI[bot]'
           allowed_bots: '*'
 
           # This is an optional setting that allows Claude to read CI results on PRs
