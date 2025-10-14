@@ -11,8 +11,25 @@ This marketplace provides production-ready plugins for Claude Code, featuring:
 - **Test Generation** - Comprehensive test suite creation for multiple frameworks
 - **Validation Hooks** - Automatic syntax validation on file changes
 - **MCP Server Examples** - Reference implementation for custom integrations
+- **Browser Automation** - Playwright MCP integration for web testing and automation
 
 Perfect for teams wanting to boost productivity with automated workflows and AI-powered code assistance.
+
+## MCP Server Integration
+
+This repository demonstrates MCP (Model Context Protocol) server integration with two remote servers:
+
+### Context7 - Documentation Retrieval
+- **URL**: `https://mcp.context7.com/mcp`
+- **Purpose**: Retrieve latest documentation for any library or framework
+- **Tools**: `resolve-library-id`, `get-library-docs`
+
+### Playwright - Browser Automation
+- **URL**: `https://playwright-mcp.ando-kivilaid.workers.dev/mcp`
+- **Purpose**: Web browser automation and testing
+- **Tools**: `browser_navigate`, `browser_snapshot`, `browser_take_screenshot`, `browser_click`, `browser_type`, `browser_evaluate`, `browser_wait_for`
+
+Configuration is managed in `.mcp.json` at the repository root, which is automatically detected by Claude Code Action workflows.
 
 ## Quick Start
 

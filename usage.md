@@ -221,3 +221,99 @@ Upload a screenshot of a bug and ask Claude to fix it:
 ```
 
 Claude can see and analyze images, making it easy to fix visual bugs or UI issues.
+
+## MCP Server Configuration
+
+This repository demonstrates how to integrate MCP (Model Context Protocol) servers with Claude Code Actions. MCP servers extend Claude's capabilities with additional tools and integrations.
+
+### Configuration File
+
+MCP servers are configured in `.mcp.json` at the repository root:
+
+```json
+{
+  "mcpServers": {
+    "context7": {
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "playwright": {
+      "type": "http",
+      "url": "https://playwright-mcp.ando-kivilaid.workers.dev/mcp"
+    }
+  }
+}
+```
+
+### Enabling Tools in Workflow
+
+Tools from MCP servers must be explicitly allowed in your workflow configuration:
+
+```yaml
+claude_args: |
+  --allowedTools mcp__context7__resolve-library-id mcp__context7__get-library-docs mcp__playwright__browser_navigate mcp__playwright__browser_snapshot mcp__playwright__browser_take_screenshot mcp__playwright__browser_click mcp__playwright__browser_type mcp__playwright__browser_evaluate mcp__playwright__browser_wait_for
+```
+
+### Available MCP Servers
+
+#### Context7 - Documentation Retrieval
+Retrieves up-to-date documentation for any library or framework.
+
+**Tools:**
+- `mcp__context7__resolve-library-id` - Find library documentation IDs
+- `mcp__context7__get-library-docs` - Fetch latest library documentation
+
+**Example usage:**
+```
+@AndoAI Use context7 to get the latest Playwright documentation
+```
+
+#### Playwright - Browser Automation
+Provides web browser automation capabilities for testing and web interactions.
+
+**Tools:**
+- `mcp__playwright__browser_navigate` - Navigate to URLs
+- `mcp__playwright__browser_snapshot` - Capture accessibility tree snapshot
+- `mcp__playwright__browser_take_screenshot` - Take page screenshots
+- `mcp__playwright__browser_click` - Click elements
+- `mcp__playwright__browser_type` - Type text into inputs
+- `mcp__playwright__browser_evaluate` - Execute JavaScript
+- `mcp__playwright__browser_wait_for` - Wait for conditions
+
+**Example usage:**
+```
+@AndoAI Navigate to https://example.com and take a screenshot
+```
+
+### How It Works
+
+1. **Auto-Detection**: The `.mcp.json` file is automatically detected by the Claude Code Action
+2. **Tool Naming**: MCP tools follow the pattern `mcp__<server-name>__<tool-name>`
+3. **Explicit Allowlist**: Tools must be explicitly enabled in `claude_args` for security
+4. **Remote Servers**: Both servers run remotely using HTTP/SSE transport protocol
+
+### Adding Your Own MCP Servers
+
+To add additional MCP servers:
+
+1. Add server configuration to `.mcp.json`:
+```json
+{
+  "mcpServers": {
+    "your-server": {
+      "type": "http",
+      "url": "https://your-mcp-server.com/mcp"
+    }
+  }
+}
+```
+
+2. Enable the tools in your workflow:
+```yaml
+claude_args: |
+  --allowedTools mcp__your-server__*
+```
+
+For more information about MCP servers, see:
+- [MCP Protocol Documentation](https://modelcontextprotocol.io/)
+- [Claude Code MCP Guide](https://docs.claude.com/en/docs/claude-code/mcp)
