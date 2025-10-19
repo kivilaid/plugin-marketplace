@@ -1,19 +1,23 @@
 # Claude Code Plugin Marketplace
 
-A curated plugin marketplace featuring productivity tools with Git workflow automation, code review agents, and testing capabilities.
+A curated plugin marketplace featuring productivity tools, document processing skills, creative capabilities, and development workflows with Git automation, code review agents, and testing.
 
 ## Overview
 
-This marketplace provides production-ready plugins for Claude Code, featuring:
+This marketplace provides production-ready plugins and skills for Claude Code, featuring:
 
+- **Document Processing** - Create and edit Excel, Word, PowerPoint, and PDF files
+- **Creative & Design** - Generate algorithmic art, canvas designs, and Slack GIFs
+- **Development Tools** - MCP server building, web app testing, and artifact creation
 - **Git Workflow Automation** - Streamline commits, PRs, and branch management
 - **Code Review Agents** - Thorough code review with best practices analysis
 - **Test Generation** - Comprehensive test suite creation for multiple frameworks
+- **Enterprise Skills** - Internal communications, brand guidelines, and theme styling
 - **Validation Hooks** - Automatic syntax validation on file changes
 - **MCP Server Examples** - Reference implementation for custom integrations
 - **Browser Automation** - Playwright MCP integration for web testing and automation
 
-Perfect for teams wanting to boost productivity with automated workflows and AI-powered code assistance.
+Perfect for teams and individuals wanting to boost productivity with automated workflows, AI-powered code assistance, and specialized skills.
 
 ## MCP Server Integration
 
@@ -43,13 +47,54 @@ Configuration is managed in `.mcp.json` at the repository root, which is automat
 /plugin marketplace add /path/to/plugin-marketplace
 ```
 
-### Install the example plugin
+### Install plugins
 
 ```bash
+# Install document processing skills
+/plugin install document-skills@example-marketplace
+
+# Install example skills collection
+/plugin install example-skills@example-marketplace
+
+# Install full-featured productivity plugin
 /plugin install example-full-featured@example-marketplace
 ```
 
 ## Available Plugins
+
+### Document Skills
+
+**Collection of document processing suite** including Excel, Word, PowerPoint, and PDF capabilities.
+
+**Includes:**
+- **xlsx** - Create, edit, and analyze Excel spreadsheets with support for formulas, formatting, data analysis, and visualization
+- **docx** - Create, edit, and analyze Word documents with support for tracked changes, comments, formatting preservation, and text extraction
+- **pptx** - Create, edit, and analyze PowerPoint presentations with support for layouts, templates, charts, and automated slide generation
+- **pdf** - Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms
+
+**Note:** These document skills are source-available (see THIRD_PARTY_NOTICES.md) and are point-in-time snapshots for reference.
+
+### Example Skills
+
+**Collection of example skills** demonstrating various capabilities including skill creation, MCP building, visual design, algorithmic art, internal communications, web testing, artifact building, Slack GIFs, and theme styling.
+
+**Creative & Design:**
+- **algorithmic-art** - Create generative art using p5.js with seeded randomness, flow fields, and particle systems
+- **canvas-design** - Design beautiful visual art in .png and .pdf formats using design philosophies
+- **slack-gif-creator** - Create animated GIFs optimized for Slack's size constraints
+- **theme-factory** - Style artifacts with 10 pre-set professional themes or generate custom themes on-the-fly
+
+**Development & Technical:**
+- **artifacts-builder** - Build complex claude.ai HTML artifacts using React, Tailwind CSS, and shadcn/ui components
+- **mcp-builder** - Guide for creating high-quality MCP servers to integrate external APIs and services
+- **webapp-testing** - Test local web applications using Playwright for UI verification and debugging
+
+**Enterprise & Communication:**
+- **brand-guidelines** - Apply Anthropic's official brand colors and typography to artifacts
+- **internal-comms** - Write internal communications like status reports, newsletters, and FAQs
+
+**Meta Skills:**
+- **skill-creator** - Guide for creating effective skills that extend Claude's capabilities
 
 ### Full-Featured Productivity Plugin
 

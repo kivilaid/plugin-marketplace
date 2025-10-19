@@ -25,6 +25,36 @@
       "keywords": ["git", "workflow", "automation", "code-review", "testing", "productivity"],
       "category": "productivity",
       "tags": ["git", "productivity", "automation", "workflow"]
+    },
+    {
+      "name": "document-skills",
+      "description": "Collection of document processing suite including Excel, Word, PowerPoint, and PDF capabilities",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./document-skills/xlsx",
+        "./document-skills/docx",
+        "./document-skills/pptx",
+        "./document-skills/pdf"
+      ]
+    },
+    {
+      "name": "example-skills",
+      "description": "Collection of example skills demonstrating various capabilities including skill creation, MCP building, visual design, algorithmic art, internal communications, web testing, artifact building, Slack GIFs, and theme styling",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skill-creator",
+        "./mcp-builder",
+        "./canvas-design",
+        "./algorithmic-art",
+        "./internal-comms",
+        "./webapp-testing",
+        "./artifacts-builder",
+        "./slack-gif-creator",
+        "./theme-factory",
+        "./brand-guidelines"
+      ]
     }
   ]
 }
