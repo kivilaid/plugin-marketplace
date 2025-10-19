@@ -1,12 +1,14 @@
 # Claude Code Plugin Marketplace
 
-A curated plugin marketplace featuring productivity tools, document processing skills, creative capabilities, and development workflows with Git automation, code review agents, and testing.
+A comprehensive Claude Code plugin marketplace with **100+ plugins and skills** featuring official Anthropic tools, specialized agents, community skills, and workflow automation for every development need.
 
 ## Overview
 
 This marketplace provides production-ready plugins and skills for Claude Code, featuring:
 
 - **Official Anthropic Plugins** - Agent SDK development, PR review toolkit, commit workflows, feature development, and security guidance
+- **wshobson Specialized Agents (64 plugins)** - Production-ready workflow orchestration covering development, testing, DevOps, data/AI, security, documentation, and more
+- **davila7 Comprehensive Toolkits (10 plugins)** - Ready-to-use templates for Git, Supabase, Next.js/Vercel, testing, security, AI/ML, DevOps, documentation, performance, and project management
 - **Development Workflow Skills** - TDD, git worktrees, debugging, brainstorming, and root cause analysis from obra/superpowers
 - **Content & Productivity Skills** - Article extraction, YouTube transcripts, research writing, and workflow optimization
 - **Media & Data Processing** - Video download, image enhancement, CSV analysis, and meeting insights
@@ -84,6 +86,24 @@ Configuration is managed in `.mcp.json` at the repository root, which is automat
 
 # Install engineering workflow tools
 /plugin install engineering-workflow-tools@example-marketplace
+
+# Install wshobson specialized agents (64 plugins available)
+/plugin install code-documentation@claude-code-workflows
+/plugin install debugging-toolkit@claude-code-workflows
+/plugin install git-pr-workflows@claude-code-workflows
+# ... and 61 more specialized agent plugins
+
+# Install davila7 comprehensive toolkits (10 available)
+/plugin install git-workflow@claude-code-templates
+/plugin install supabase-toolkit@claude-code-templates
+/plugin install nextjs-vercel-pro@claude-code-templates
+/plugin install testing-suite@claude-code-templates
+/plugin install security-pro@claude-code-templates
+/plugin install ai-ml-toolkit@claude-code-templates
+/plugin install devops-automation@claude-code-templates
+/plugin install documentation-generator@claude-code-templates
+/plugin install performance-optimizer@claude-code-templates
+/plugin install project-management-suite@claude-code-templates
 ```
 
 ## Available Plugins
@@ -264,6 +284,41 @@ Tools for git operations, code review implementation, and test fixing.
 - **git-pushing** - Automated git push workflows with validation and checks
 - **review-implementing** - Implement code review feedback systematically
 - **test-fixing** - Debug and fix failing tests with systematic approaches
+
+### wshobson Specialized Agents (64 plugins)
+
+**Production-ready workflow orchestration** from wshobson/agents with 64 focused plugins, 87 specialized agents, and 44 tools.
+
+Comprehensive collection covering every aspect of modern software development, from API development to game programming.
+
+**Categories include:**
+- **Development**: API scaffolding, backend development, frontend/mobile, full-stack orchestration, web scripting
+- **Testing & Quality**: Unit testing, TDD workflows, performance testing, code review, comprehensive review
+- **DevOps & Infrastructure**: CI/CD automation, cloud infrastructure, Kubernetes operations, deployment strategies
+- **Data & AI**: Data engineering, machine learning ops, LLM application development, quantitative trading
+- **Security**: Backend API security, security compliance, security scanning, incident response
+- **Documentation**: Code documentation, documentation generation, technical writing
+- **Debugging**: Debugging toolkit, error debugging, distributed debugging, error diagnostics
+- **Specialized**: Blockchain/Web3, game development, ARM Cortex microcontrollers, payment processing, SEO optimization
+
+### davila7 Comprehensive Toolkits (10 plugins)
+
+**Ready-to-use templates** from davila7/claude-code-templates organized by workflow with commands, agents, and MCP integrations.
+
+Professional-grade toolkits for modern development stacks.
+
+**Toolkits:**
+
+1. **git-workflow** - Git workflow automation with feature, release, and hotfix commands plus git flow manager agent
+2. **supabase-toolkit** - Complete Supabase workflow with backup management, data exploration, migration assistance, performance optimization, and data engineering agents
+3. **nextjs-vercel-pro** - Next.js and Vercel development toolkit with scaffolding, component generation, API testing, performance audits, and deployment optimization
+4. **testing-suite** - Comprehensive testing with E2E setup, test generation, coverage analysis, visual testing, load testing, and QA automation engineers
+5. **security-pro** - Enterprise security with auditing, vulnerability scanning, dependency audits, and specialized security agents (auditor, penetration tester, compliance specialist, incident responder)
+6. **ai-ml-toolkit** - AI and Machine Learning development suite with specialized agents (AI engineer, ML engineer, NLP engineer, computer vision engineer, MLOps engineer)
+7. **devops-automation** - DevOps suite with CI/CD pipeline setup, Docker Compose, Kubernetes deployment, monitoring, and infrastructure agents
+8. **documentation-generator** - Automated documentation with API docs, Docusaurus setup, user guides, changelogs, and technical writing agents
+9. **performance-optimizer** - Performance optimization with bundle analysis, caching, image optimization, lazy loading, and performance engineering agents
+10. **project-management-suite** - Project management with sprint planning, roadmaps, task breakdowns, estimates, standups, retrospectives, and product strategist agents
 
 ## Repository Structure
 

@@ -5,11 +5,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Repository Purpose
 
 This is a **plugin marketplace** for Claude Code, not a traditional codebase. It contains:
-- Plugin definitions in `.claude-plugin/marketplace.json`
-- Plugin components (commands, agents, hooks, MCP servers) and skills in `plugins/`
+- Plugin definitions in `.claude-plugin/marketplace.json` (87 total plugins)
+- Plugin components (commands, agents, hooks, MCP servers) and skills in `plugins/` (103 total directories)
 - GitHub Actions workflow using Claude Code Action in `.github/workflows/claude.yml`
 - MCP server configuration in `.mcp.json` (auto-detected by Claude Code Action)
-- **Official Anthropic plugins** from claude-code repository (agent-sdk-dev, pr-review-toolkit, commit-commands, feature-dev, security-guidance)
+- **Official Anthropic plugins** from claude-code repository (5 plugins: agent-sdk-dev, pr-review-toolkit, commit-commands, feature-dev, security-guidance)
+- **wshobson specialized agents** from wshobson/agents (64 plugins covering all aspects of modern development)
+- **davila7 comprehensive toolkits** from davila7/claude-code-templates (10 toolkits for Git, Supabase, Next.js, testing, security, AI/ML, DevOps, documentation, performance, project management)
 - Document processing skills (xlsx, docx, pptx, pdf) from Anthropic's skills repository
 - Example skills demonstrating creative, development, and enterprise capabilities
 - **Development workflow skills** from obra/superpowers (6 skills: TDD, git worktrees, branch completion, root cause tracing, brainstorming, systematic debugging)
