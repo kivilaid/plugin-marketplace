@@ -6,18 +6,20 @@ A curated plugin marketplace featuring productivity tools, document processing s
 
 This marketplace provides production-ready plugins and skills for Claude Code, featuring:
 
+- **Official Anthropic Plugins** - Agent SDK development, PR review toolkit, commit workflows, feature development, and security guidance
 - **Document Processing** - Create and edit Excel, Word, PowerPoint, and PDF files
 - **Creative & Design** - Generate algorithmic art, canvas designs, and Slack GIFs
 - **Development Tools** - MCP server building, web app testing, and artifact creation
 - **Git Workflow Automation** - Streamline commits, PRs, and branch management
-- **Code Review Agents** - Thorough code review with best practices analysis
+- **Code Review Agents** - Comprehensive PR review with specialized agents for comments, tests, errors, types, quality, and simplification
 - **Test Generation** - Comprehensive test suite creation for multiple frameworks
 - **Enterprise Skills** - Internal communications, brand guidelines, and theme styling
+- **Security Features** - Automatic security warnings for common vulnerabilities and unsafe patterns
 - **Validation Hooks** - Automatic syntax validation on file changes
 - **MCP Server Examples** - Reference implementation for custom integrations
 - **Browser Automation** - Playwright MCP integration for web testing and automation
 
-Perfect for teams and individuals wanting to boost productivity with automated workflows, AI-powered code assistance, and specialized skills.
+Perfect for teams and individuals wanting to boost productivity with automated workflows, AI-powered code assistance, official Anthropic tooling, and specialized skills.
 
 ## MCP Server Integration
 
@@ -58,6 +60,13 @@ Configuration is managed in `.mcp.json` at the repository root, which is automat
 
 # Install full-featured productivity plugin
 /plugin install example-full-featured@example-marketplace
+
+# Install Anthropic official plugins
+/plugin install agent-sdk-dev@example-marketplace
+/plugin install pr-review-toolkit@example-marketplace
+/plugin install commit-commands@example-marketplace
+/plugin install feature-dev@example-marketplace
+/plugin install security-guidance@example-marketplace
 ```
 
 ## Available Plugins
@@ -116,6 +125,68 @@ Production-ready plugin with Git automation, code review, testing, and validatio
 
 - **MCP Servers:**
   - `example-server` - Demonstrates MCP protocol with example tools
+
+### Agent SDK Development
+
+**Official Anthropic plugin** for working with the Claude Agent SDK.
+
+Development kit with specialized agents and commands for creating, testing, and deploying Claude Agent SDK applications in Python and TypeScript.
+
+**Components:**
+- **Commands:**
+  - `/new-sdk-app` - Create and setup a new Claude Agent SDK application
+
+- **Agents:**
+  - `agent-sdk-verifier-py` - Verify Python Agent SDK applications follow best practices
+  - `agent-sdk-verifier-ts` - Verify TypeScript Agent SDK applications follow best practices
+
+### PR Review Toolkit
+
+**Official Anthropic plugin** with comprehensive PR review capabilities.
+
+Collection of specialized review agents that focus on different aspects of code quality, each providing deep analysis in their domain.
+
+**Agents:**
+- `comment-review` - Review and improve code comments and documentation
+- `test-review` - Analyze test coverage and quality
+- `error-handling-review` - Evaluate error handling patterns and robustness
+- `type-design-review` - Review type definitions and type safety
+- `code-quality-review` - Assess overall code quality and maintainability
+- `code-simplification-review` - Suggest simplifications and refactorings
+
+### Commit Commands
+
+**Official Anthropic plugin** for streamlined git workflows.
+
+Commands for git commit workflows including intelligent commit message generation, push operations, and PR creation.
+
+**Commands:**
+- `/commit` - Create a git commit with smart message generation
+- `/commit-push-pr` - Commit, push, and open a PR in one command
+- `/clean_gone` - Clean up branches marked as [gone]
+
+### Feature Development
+
+**Comprehensive feature development workflow** with specialized agents for the full development lifecycle.
+
+Multi-stage development workflow with agents for exploration, design, implementation, and review.
+
+**Agents:**
+- `explore` - Codebase exploration and understanding
+- `architect` - Architecture design and planning
+- `quality-reviewer` - Code quality and design review
+
+### Security Guidance
+
+**Official Anthropic plugin** for security-aware development.
+
+Security reminder hook that automatically warns about potential security issues when editing files, including command injection, XSS, SQL injection, and other unsafe patterns.
+
+**Features:**
+- Automatic security warnings for common vulnerabilities
+- Pattern detection for unsafe code practices
+- Guidance on secure coding practices
+- Post-edit hooks for real-time feedback
 
 ## Repository Structure
 

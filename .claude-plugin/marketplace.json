@@ -5,7 +5,7 @@
     "email": "ando@kivilaid.ee"
   },
   "metadata": {
-    "description": "Claude Code plugin marketplace featuring productivity tools with Git automation, code review, and testing capabilities",
+    "description": "Claude Code plugin marketplace featuring productivity tools, document processing skills, creative capabilities, and development workflows with Git automation, code review, testing, and MCP integration",
     "version": "1.0.0",
     "pluginRoot": "./plugins"
   },
@@ -32,10 +32,10 @@
       "source": "./",
       "strict": false,
       "skills": [
-        "./document-skills/xlsx",
-        "./document-skills/docx",
-        "./document-skills/pptx",
-        "./document-skills/pdf"
+        "./plugins/document-skills/xlsx",
+        "./plugins/document-skills/docx",
+        "./plugins/document-skills/pptx",
+        "./plugins/document-skills/pdf"
       ]
     },
     {
@@ -44,17 +44,72 @@
       "source": "./",
       "strict": false,
       "skills": [
-        "./skill-creator",
-        "./mcp-builder",
-        "./canvas-design",
-        "./algorithmic-art",
-        "./internal-comms",
-        "./webapp-testing",
-        "./artifacts-builder",
-        "./slack-gif-creator",
-        "./theme-factory",
-        "./brand-guidelines"
+        "./plugins/skill-creator",
+        "./plugins/mcp-builder",
+        "./plugins/canvas-design",
+        "./plugins/algorithmic-art",
+        "./plugins/internal-comms",
+        "./plugins/webapp-testing",
+        "./plugins/artifacts-builder",
+        "./plugins/slack-gif-creator",
+        "./plugins/theme-factory",
+        "./plugins/brand-guidelines"
       ]
+    },
+    {
+      "name": "agent-sdk-dev",
+      "description": "Development kit for working with the Claude Agent SDK",
+      "source": "./plugins/agent-sdk-dev",
+      "version": "1.0.0",
+      "author": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "category": "development"
+    },
+    {
+      "name": "pr-review-toolkit",
+      "description": "Comprehensive PR review agents specializing in comments, tests, error handling, type design, code quality, and code simplification",
+      "source": "./plugins/pr-review-toolkit",
+      "version": "1.0.0",
+      "author": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "category": "productivity"
+    },
+    {
+      "name": "commit-commands",
+      "description": "Commands for git commit workflows including commit, push, and PR creation",
+      "source": "./plugins/commit-commands",
+      "version": "1.0.0",
+      "author": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "category": "productivity"
+    },
+    {
+      "name": "feature-dev",
+      "description": "Comprehensive feature development workflow with specialized agents for codebase exploration, architecture design, and quality review",
+      "source": "./plugins/feature-dev",
+      "version": "1.0.0",
+      "author": {
+        "name": "Siddharth Bidasaria",
+        "email": "sbidasaria@anthropic.com"
+      },
+      "category": "development"
+    },
+    {
+      "name": "security-guidance",
+      "description": "Security reminder hook that warns about potential security issues when editing files, including command injection, XSS, and unsafe code patterns",
+      "source": "./plugins/security-guidance",
+      "version": "1.0.0",
+      "author": {
+        "name": "David Dworken",
+        "email": "dworken@anthropic.com"
+      },
+      "category": "security"
     }
   ]
 }

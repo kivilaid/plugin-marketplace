@@ -9,6 +9,7 @@ This is a **plugin marketplace** for Claude Code, not a traditional codebase. It
 - Plugin components (commands, agents, hooks, MCP servers) and skills in `plugins/`
 - GitHub Actions workflow using Claude Code Action in `.github/workflows/claude.yml`
 - MCP server configuration in `.mcp.json` (auto-detected by Claude Code Action)
+- **Official Anthropic plugins** from claude-code repository (agent-sdk-dev, pr-review-toolkit, commit-commands, feature-dev, security-guidance)
 - Document processing skills (xlsx, docx, pptx, pdf) from Anthropic's skills repository
 - Example skills demonstrating creative, development, and enterprise capabilities
 
