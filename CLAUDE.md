@@ -117,7 +117,7 @@ MCP tools must be explicitly allowed in workflow `claude_args`:
 /plugin marketplace add /Users/ando/github/plugin-marketplace
 
 # Install plugin from local marketplace
-/plugin install example-full-featured@example-marketplace
+/plugin install example-full-featured@ando-marketplace
 
 # Test slash commands
 /commit

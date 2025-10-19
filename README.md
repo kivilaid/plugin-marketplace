@@ -90,31 +90,31 @@ Configuration is managed in `.mcp.json` at the repository root, which is automat
 #### Essential Development Tools
 ```bash
 # Official Anthropic plugins
-/plugin install commit-commands@example-marketplace      # Git workflows
-/plugin install pr-review-toolkit@example-marketplace    # PR reviews
-/plugin install feature-dev@example-marketplace          # Feature development
-/plugin install security-guidance@example-marketplace    # Security warnings
+/plugin install commit-commands@ando-marketplace      # Git workflows
+/plugin install pr-review-toolkit@ando-marketplace    # PR reviews
+/plugin install feature-dev@ando-marketplace          # Feature development
+/plugin install security-guidance@ando-marketplace    # Security warnings
 ```
 
 #### Full-Stack Development
 ```bash
 # davila7 comprehensive toolkits
-/plugin install git-workflow@example-marketplace         # Git automation
-/plugin install nextjs-vercel-pro@example-marketplace    # Next.js + Vercel
-/plugin install testing-suite@example-marketplace        # Testing automation
-/plugin install devops-automation@example-marketplace    # CI/CD + Docker + K8s
+/plugin install git-workflow@ando-marketplace         # Git automation
+/plugin install nextjs-vercel-pro@ando-marketplace    # Next.js + Vercel
+/plugin install testing-suite@ando-marketplace        # Testing automation
+/plugin install devops-automation@ando-marketplace    # CI/CD + Docker + K8s
 ```
 
 #### Data & Database
 ```bash
-/plugin install supabase-toolkit@example-marketplace     # Supabase workflows
-/plugin install ai-ml-toolkit@example-marketplace        # AI/ML development
+/plugin install supabase-toolkit@ando-marketplace     # Supabase workflows
+/plugin install ai-ml-toolkit@ando-marketplace        # AI/ML development
 ```
 
 #### Productivity & Documentation
 ```bash
-/plugin install document-skills@example-marketplace      # Excel, Word, PDF, PPT
-/plugin install documentation-generator@example-marketplace  # API docs + guides
+/plugin install document-skills@ando-marketplace      # Excel, Word, PDF, PPT
+/plugin install documentation-generator@ando-marketplace  # API docs + guides
 ```
 
 #### Browse All Plugins
