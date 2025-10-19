@@ -113,13 +113,62 @@
     },
     {
       "name": "development-workflow-skills",
-      "description": "Professional development workflow skills from obra/superpowers including test-driven development, git worktrees, and branch completion workflows",
+      "description": "Professional development workflow skills from obra/superpowers including TDD, git workflows, debugging, brainstorming, and root cause analysis",
       "source": "./",
       "strict": false,
       "skills": [
         "./plugins/test-driven-development",
         "./plugins/using-git-worktrees",
-        "./plugins/finishing-a-development-branch"
+        "./plugins/finishing-a-development-branch",
+        "./plugins/root-cause-tracing",
+        "./plugins/brainstorming",
+        "./plugins/systematic-debugging"
+      ]
+    },
+    {
+      "name": "content-productivity-skills",
+      "description": "Content creation and productivity skills including article extraction, YouTube transcripts, research writing, and workflow optimization",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./plugins/article-extractor",
+        "./plugins/youtube-transcript",
+        "./plugins/content-research-writer",
+        "./plugins/tapestry",
+        "./plugins/ship-learn-next"
+      ]
+    },
+    {
+      "name": "media-data-tools",
+      "description": "Media processing and data analysis tools including video download, image enhancement, CSV analysis, and meeting insights",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./plugins/video-downloader",
+        "./plugins/image-enhancer",
+        "./plugins/csv-data-summarizer",
+        "./plugins/meeting-insights-analyzer"
+      ]
+    },
+    {
+      "name": "organization-tools",
+      "description": "Organization and automation tools for file management, invoice processing, and document organization",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./plugins/file-organizer",
+        "./plugins/invoice-organizer"
+      ]
+    },
+    {
+      "name": "engineering-workflow-tools",
+      "description": "Engineering workflow automation tools for git operations, code review implementation, and test fixing",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./plugins/git-pushing",
+        "./plugins/review-implementing",
+        "./plugins/test-fixing"
       ]
     }
   ]

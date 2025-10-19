@@ -7,16 +7,17 @@ A curated plugin marketplace featuring productivity tools, document processing s
 This marketplace provides production-ready plugins and skills for Claude Code, featuring:
 
 - **Official Anthropic Plugins** - Agent SDK development, PR review toolkit, commit workflows, feature development, and security guidance
-- **Development Workflow Skills** - Test-driven development, git worktrees, and branch completion workflows from obra/superpowers
+- **Development Workflow Skills** - TDD, git worktrees, debugging, brainstorming, and root cause analysis from obra/superpowers
+- **Content & Productivity Skills** - Article extraction, YouTube transcripts, research writing, and workflow optimization
+- **Media & Data Processing** - Video download, image enhancement, CSV analysis, and meeting insights
+- **Organization Tools** - File management and invoice processing automation
+- **Engineering Workflows** - Git operations, code review implementation, and test fixing automation
 - **Document Processing** - Create and edit Excel, Word, PowerPoint, and PDF files
 - **Creative & Design** - Generate algorithmic art, canvas designs, and Slack GIFs
 - **Development Tools** - MCP server building, web app testing, and artifact creation
-- **Git Workflow Automation** - Streamline commits, PRs, and branch management
 - **Code Review Agents** - Comprehensive PR review with specialized agents for comments, tests, errors, types, quality, and simplification
-- **Test Generation** - Comprehensive test suite creation for multiple frameworks
 - **Enterprise Skills** - Internal communications, brand guidelines, and theme styling
 - **Security Features** - Automatic security warnings for common vulnerabilities and unsafe patterns
-- **Validation Hooks** - Automatic syntax validation on file changes
 - **MCP Server Examples** - Reference implementation for custom integrations
 - **Browser Automation** - Playwright MCP integration for web testing and automation
 
@@ -71,6 +72,18 @@ Configuration is managed in `.mcp.json` at the repository root, which is automat
 
 # Install development workflow skills
 /plugin install development-workflow-skills@example-marketplace
+
+# Install content & productivity skills
+/plugin install content-productivity-skills@example-marketplace
+
+# Install media & data processing tools
+/plugin install media-data-tools@example-marketplace
+
+# Install organization tools
+/plugin install organization-tools@example-marketplace
+
+# Install engineering workflow tools
+/plugin install engineering-workflow-tools@example-marketplace
 ```
 
 ## Available Plugins
@@ -196,12 +209,61 @@ Security reminder hook that automatically warns about potential security issues 
 
 **Professional development workflow skills** from obra/superpowers repository.
 
-Collection of battle-tested development practices for TDD, git workflows, and branch management.
+Collection of battle-tested development practices for TDD, git workflows, debugging, brainstorming, and root cause analysis.
 
 **Skills:**
-- **test-driven-development** - Rigorous TDD methodology with the iron law: write the test first, watch it fail, write minimal code to pass. Includes red-green-refactor cycle guidance and when to use TDD
-- **using-git-worktrees** - Advanced git worktree usage for managing multiple branches simultaneously, enabling parallel work on features, bugs, and reviews without context switching
-- **finishing-a-development-branch** - Comprehensive checklist and workflow for completing development branches, including testing, documentation, cleanup, and PR preparation
+- **test-driven-development** - Rigorous TDD methodology with the iron law: write the test first, watch it fail, write minimal code to pass
+- **using-git-worktrees** - Advanced git worktree usage for managing multiple branches simultaneously
+- **finishing-a-development-branch** - Comprehensive checklist and workflow for completing development branches
+- **root-cause-tracing** - Systematic methodology for tracing bugs and issues to their root causes
+- **brainstorming** - Structured brainstorming techniques for problem-solving and idea generation
+- **systematic-debugging** - Methodical debugging approaches with strategies for isolating and fixing issues
+
+### Content & Productivity Skills
+
+**Content creation and productivity tools** from michalparkola/tapestry-skills and ComposioHQ/awesome-claude-skills.
+
+Skills for content extraction, research, writing, and workflow optimization.
+
+**Skills:**
+- **article-extractor** - Extract and summarize articles from web URLs with structured output
+- **youtube-transcript** - Download and process YouTube video transcripts for analysis
+- **content-research-writer** - Research-driven content writing with source verification and citations
+- **tapestry** - Workflow optimization and task management methodology
+- **ship-learn-next** - Iterative development workflow: ship quickly, learn from feedback, iterate
+
+### Media & Data Processing Tools
+
+**Media and data analysis tools** from ComposioHQ/awesome-claude-skills and coffeefuelbump.
+
+Tools for video processing, image enhancement, CSV analysis, and meeting insights.
+
+**Skills:**
+- **video-downloader** - Download videos from various platforms with format options
+- **image-enhancer** - Enhance image quality with AI-powered improvements
+- **csv-data-summarizer** - Analyze and summarize CSV data with statistical insights
+- **meeting-insights-analyzer** - Extract key insights and action items from meeting transcripts
+
+### Organization Tools
+
+**Organization and automation tools** from ComposioHQ/awesome-claude-skills.
+
+Tools for file management and invoice processing automation.
+
+**Skills:**
+- **file-organizer** - Automatically organize files based on type, date, and content
+- **invoice-organizer** - Process and organize invoices with data extraction
+
+### Engineering Workflow Tools
+
+**Engineering workflow automation** from mhattingpete/claude-skills-marketplace.
+
+Tools for git operations, code review implementation, and test fixing.
+
+**Skills:**
+- **git-pushing** - Automated git push workflows with validation and checks
+- **review-implementing** - Implement code review feedback systematically
+- **test-fixing** - Debug and fix failing tests with systematic approaches
 
 ## Repository Structure
 
