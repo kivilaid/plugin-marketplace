@@ -110,6 +110,17 @@
         "email": "dworken@anthropic.com"
       },
       "category": "security"
+    },
+    {
+      "name": "development-workflow-skills",
+      "description": "Professional development workflow skills from obra/superpowers including test-driven development, git worktrees, and branch completion workflows",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./plugins/test-driven-development",
+        "./plugins/using-git-worktrees",
+        "./plugins/finishing-a-development-branch"
+      ]
     }
   ]
 }

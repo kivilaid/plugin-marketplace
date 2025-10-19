@@ -7,6 +7,7 @@ A curated plugin marketplace featuring productivity tools, document processing s
 This marketplace provides production-ready plugins and skills for Claude Code, featuring:
 
 - **Official Anthropic Plugins** - Agent SDK development, PR review toolkit, commit workflows, feature development, and security guidance
+- **Development Workflow Skills** - Test-driven development, git worktrees, and branch completion workflows from obra/superpowers
 - **Document Processing** - Create and edit Excel, Word, PowerPoint, and PDF files
 - **Creative & Design** - Generate algorithmic art, canvas designs, and Slack GIFs
 - **Development Tools** - MCP server building, web app testing, and artifact creation
@@ -67,6 +68,9 @@ Configuration is managed in `.mcp.json` at the repository root, which is automat
 /plugin install commit-commands@example-marketplace
 /plugin install feature-dev@example-marketplace
 /plugin install security-guidance@example-marketplace
+
+# Install development workflow skills
+/plugin install development-workflow-skills@example-marketplace
 ```
 
 ## Available Plugins
@@ -187,6 +191,17 @@ Security reminder hook that automatically warns about potential security issues 
 - Pattern detection for unsafe code practices
 - Guidance on secure coding practices
 - Post-edit hooks for real-time feedback
+
+### Development Workflow Skills
+
+**Professional development workflow skills** from obra/superpowers repository.
+
+Collection of battle-tested development practices for TDD, git workflows, and branch management.
+
+**Skills:**
+- **test-driven-development** - Rigorous TDD methodology with the iron law: write the test first, watch it fail, write minimal code to pass. Includes red-green-refactor cycle guidance and when to use TDD
+- **using-git-worktrees** - Advanced git worktree usage for managing multiple branches simultaneously, enabling parallel work on features, bugs, and reviews without context switching
+- **finishing-a-development-branch** - Comprehensive checklist and workflow for completing development branches, including testing, documentation, cleanup, and PR preparation
 
 ## Repository Structure
 

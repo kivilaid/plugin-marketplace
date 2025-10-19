@@ -12,6 +12,7 @@ This is a **plugin marketplace** for Claude Code, not a traditional codebase. It
 - **Official Anthropic plugins** from claude-code repository (agent-sdk-dev, pr-review-toolkit, commit-commands, feature-dev, security-guidance)
 - Document processing skills (xlsx, docx, pptx, pdf) from Anthropic's skills repository
 - Example skills demonstrating creative, development, and enterprise capabilities
+- **Development workflow skills** from obra/superpowers (test-driven-development, using-git-worktrees, finishing-a-development-branch)
 
 ## Architecture
 
