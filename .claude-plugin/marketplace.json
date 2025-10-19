@@ -204,13 +204,13 @@
       "category": "documentation",
       "strict": false,
       "commands": [
-        "./commands/doc-generate.md",
-        "./commands/code-explain.md"
+        "./plugins/code-documentation/commands/doc-generate.md",
+        "./plugins/code-documentation/commands/code-explain.md"
       ],
       "agents": [
-        "./agents/docs-architect.md",
-        "./agents/tutorial-engineer.md",
-        "./agents/code-reviewer.md"
+        "./plugins/code-documentation/agents/docs-architect.md",
+        "./plugins/code-documentation/agents/tutorial-engineer.md",
+        "./plugins/code-documentation/agents/code-reviewer.md"
       ]
     },
     {
@@ -234,11 +234,11 @@
       "category": "development",
       "strict": false,
       "commands": [
-        "./commands/smart-debug.md"
+        "./plugins/debugging-toolkit/commands/smart-debug.md"
       ],
       "agents": [
-        "./agents/debugger.md",
-        "./agents/dx-optimizer.md"
+        "./plugins/debugging-toolkit/agents/debugger.md",
+        "./plugins/debugging-toolkit/agents/dx-optimizer.md"
       ]
     },
     {
@@ -263,12 +263,12 @@
       "category": "workflows",
       "strict": false,
       "commands": [
-        "./commands/pr-enhance.md",
-        "./commands/onboard.md",
-        "./commands/git-workflow.md"
+        "./plugins/git-pr-workflows/commands/pr-enhance.md",
+        "./plugins/git-pr-workflows/commands/onboard.md",
+        "./plugins/git-pr-workflows/commands/git-workflow.md"
       ],
       "agents": [
-        "./agents/code-reviewer.md"
+        "./plugins/git-pr-workflows/agents/code-reviewer.md"
       ]
     },
     {
@@ -293,17 +293,17 @@
       "category": "development",
       "strict": false,
       "commands": [
-        "./commands/feature-development.md"
+        "./plugins/backend-development/commands/feature-development.md"
       ],
       "agents": [
-        "./agents/backend-architect.md",
-        "./agents/graphql-architect.md",
-        "./agents/tdd-orchestrator.md"
+        "./plugins/backend-development/agents/backend-architect.md",
+        "./plugins/backend-development/agents/graphql-architect.md",
+        "./plugins/backend-development/agents/tdd-orchestrator.md"
       ],
       "skills": [
-        "./skills/api-design-principles",
-        "./skills/architecture-patterns",
-        "./skills/microservices-patterns"
+        "./plugins/backend-development/skills/api-design-principles",
+        "./plugins/backend-development/skills/architecture-patterns",
+        "./plugins/backend-development/skills/microservices-patterns"
       ]
     },
     {
@@ -328,11 +328,11 @@
       "category": "development",
       "strict": false,
       "commands": [
-        "./commands/component-scaffold.md"
+        "./plugins/frontend-mobile-development/commands/component-scaffold.md"
       ],
       "agents": [
-        "./agents/frontend-developer.md",
-        "./agents/mobile-developer.md"
+        "./plugins/frontend-mobile-development/agents/frontend-developer.md",
+        "./plugins/frontend-mobile-development/agents/mobile-developer.md"
       ]
     },
     {
@@ -357,13 +357,13 @@
       "category": "workflows",
       "strict": false,
       "commands": [
-        "./commands/full-stack-feature.md"
+        "./plugins/full-stack-orchestration/commands/full-stack-feature.md"
       ],
       "agents": [
-        "./agents/test-automator.md",
-        "./agents/security-auditor.md",
-        "./agents/performance-engineer.md",
-        "./agents/deployment-engineer.md"
+        "./plugins/full-stack-orchestration/agents/test-automator.md",
+        "./plugins/full-stack-orchestration/agents/security-auditor.md",
+        "./plugins/full-stack-orchestration/agents/performance-engineer.md",
+        "./plugins/full-stack-orchestration/agents/deployment-engineer.md"
       ]
     },
     {
@@ -388,11 +388,11 @@
       "category": "testing",
       "strict": false,
       "commands": [
-        "./commands/test-generate.md"
+        "./plugins/unit-testing/commands/test-generate.md"
       ],
       "agents": [
-        "./agents/test-automator.md",
-        "./agents/debugger.md"
+        "./plugins/unit-testing/agents/test-automator.md",
+        "./plugins/unit-testing/agents/debugger.md"
       ]
     },
     {
@@ -416,14 +416,14 @@
       "category": "workflows",
       "strict": false,
       "commands": [
-        "./commands/tdd-cycle.md",
-        "./commands/tdd-red.md",
-        "./commands/tdd-green.md",
-        "./commands/tdd-refactor.md"
+        "./plugins/tdd-workflows/commands/tdd-cycle.md",
+        "./plugins/tdd-workflows/commands/tdd-red.md",
+        "./plugins/tdd-workflows/commands/tdd-green.md",
+        "./plugins/tdd-workflows/commands/tdd-refactor.md"
       ],
       "agents": [
-        "./agents/tdd-orchestrator.md",
-        "./agents/code-reviewer.md"
+        "./plugins/tdd-workflows/agents/tdd-orchestrator.md",
+        "./plugins/tdd-workflows/agents/code-reviewer.md"
       ]
     },
     {
@@ -447,10 +447,10 @@
       "category": "quality",
       "strict": false,
       "commands": [
-        "./commands/ai-review.md"
+        "./plugins/code-review-ai/commands/ai-review.md"
       ],
       "agents": [
-        "./agents/architect-review.md"
+        "./plugins/code-review-ai/agents/architect-review.md"
       ]
     },
     {
@@ -474,13 +474,13 @@
       "category": "utilities",
       "strict": false,
       "commands": [
-        "./commands/refactor-clean.md",
-        "./commands/tech-debt.md",
-        "./commands/context-restore.md"
+        "./plugins/code-refactoring/commands/refactor-clean.md",
+        "./plugins/code-refactoring/commands/tech-debt.md",
+        "./plugins/code-refactoring/commands/context-restore.md"
       ],
       "agents": [
-        "./agents/legacy-modernizer.md",
-        "./agents/code-reviewer.md"
+        "./plugins/code-refactoring/agents/legacy-modernizer.md",
+        "./plugins/code-refactoring/agents/code-reviewer.md"
       ]
     },
     {
@@ -505,10 +505,10 @@
       "category": "utilities",
       "strict": false,
       "commands": [
-        "./commands/deps-audit.md"
+        "./plugins/dependency-management/commands/deps-audit.md"
       ],
       "agents": [
-        "./agents/legacy-modernizer.md"
+        "./plugins/dependency-management/agents/legacy-modernizer.md"
       ]
     },
     {
@@ -532,13 +532,13 @@
       "category": "utilities",
       "strict": false,
       "commands": [
-        "./commands/error-analysis.md",
-        "./commands/error-trace.md",
-        "./commands/multi-agent-review.md"
+        "./plugins/error-debugging/commands/error-analysis.md",
+        "./plugins/error-debugging/commands/error-trace.md",
+        "./plugins/error-debugging/commands/multi-agent-review.md"
       ],
       "agents": [
-        "./agents/debugger.md",
-        "./agents/error-detective.md"
+        "./plugins/error-debugging/agents/debugger.md",
+        "./plugins/error-debugging/agents/error-detective.md"
       ]
     },
     {
@@ -562,11 +562,11 @@
       "category": "utilities",
       "strict": false,
       "commands": [
-        "./commands/issue.md",
-        "./commands/standup-notes.md"
+        "./plugins/team-collaboration/commands/issue.md",
+        "./plugins/team-collaboration/commands/standup-notes.md"
       ],
       "agents": [
-        "./agents/dx-optimizer.md"
+        "./plugins/team-collaboration/agents/dx-optimizer.md"
       ]
     },
     {
@@ -592,19 +592,19 @@
       "category": "ai-ml",
       "strict": false,
       "commands": [
-        "./commands/langchain-agent.md",
-        "./commands/ai-assistant.md",
-        "./commands/prompt-optimize.md"
+        "./plugins/llm-application-dev/commands/langchain-agent.md",
+        "./plugins/llm-application-dev/commands/ai-assistant.md",
+        "./plugins/llm-application-dev/commands/prompt-optimize.md"
       ],
       "agents": [
-        "./agents/ai-engineer.md",
-        "./agents/prompt-engineer.md"
+        "./plugins/llm-application-dev/agents/ai-engineer.md",
+        "./plugins/llm-application-dev/agents/prompt-engineer.md"
       ],
       "skills": [
-        "./skills/langchain-architecture",
-        "./skills/llm-evaluation",
-        "./skills/prompt-engineering-patterns",
-        "./skills/rag-implementation"
+        "./plugins/llm-application-dev/skills/langchain-architecture",
+        "./plugins/llm-application-dev/skills/llm-evaluation",
+        "./plugins/llm-application-dev/skills/prompt-engineering-patterns",
+        "./plugins/llm-application-dev/skills/rag-implementation"
       ]
     },
     {
@@ -628,11 +628,11 @@
       "category": "ai-ml",
       "strict": false,
       "commands": [
-        "./commands/multi-agent-optimize.md",
-        "./commands/improve-agent.md"
+        "./plugins/agent-orchestration/commands/multi-agent-optimize.md",
+        "./plugins/agent-orchestration/commands/improve-agent.md"
       ],
       "agents": [
-        "./agents/context-manager.md"
+        "./plugins/agent-orchestration/agents/context-manager.md"
       ]
     },
     {
@@ -656,11 +656,11 @@
       "category": "ai-ml",
       "strict": false,
       "commands": [
-        "./commands/context-save.md",
-        "./commands/context-restore.md"
+        "./plugins/context-management/commands/context-save.md",
+        "./plugins/context-management/commands/context-restore.md"
       ],
       "agents": [
-        "./agents/context-manager.md"
+        "./plugins/context-management/agents/context-manager.md"
       ]
     },
     {
@@ -686,15 +686,15 @@
       "category": "ai-ml",
       "strict": false,
       "commands": [
-        "./commands/ml-pipeline.md"
+        "./plugins/machine-learning-ops/commands/ml-pipeline.md"
       ],
       "agents": [
-        "./agents/data-scientist.md",
-        "./agents/ml-engineer.md",
-        "./agents/mlops-engineer.md"
+        "./plugins/machine-learning-ops/agents/data-scientist.md",
+        "./plugins/machine-learning-ops/agents/ml-engineer.md",
+        "./plugins/machine-learning-ops/agents/mlops-engineer.md"
       ],
       "skills": [
-        "./skills/ml-pipeline-workflow"
+        "./plugins/machine-learning-ops/skills/ml-pipeline-workflow"
       ]
     },
     {
@@ -719,12 +719,12 @@
       "category": "data",
       "strict": false,
       "commands": [
-        "./commands/data-driven-feature.md",
-        "./commands/data-pipeline.md"
+        "./plugins/data-engineering/commands/data-driven-feature.md",
+        "./plugins/data-engineering/commands/data-pipeline.md"
       ],
       "agents": [
-        "./agents/data-engineer.md",
-        "./agents/backend-architect.md"
+        "./plugins/data-engineering/agents/data-engineer.md",
+        "./plugins/data-engineering/agents/backend-architect.md"
       ]
     },
     {
@@ -748,12 +748,12 @@
       "category": "operations",
       "strict": false,
       "commands": [
-        "./commands/incident-response.md",
-        "./commands/smart-fix.md"
+        "./plugins/incident-response/commands/incident-response.md",
+        "./plugins/incident-response/commands/smart-fix.md"
       ],
       "agents": [
-        "./agents/incident-responder.md",
-        "./agents/devops-troubleshooter.md"
+        "./plugins/incident-response/agents/incident-responder.md",
+        "./plugins/incident-response/agents/devops-troubleshooter.md"
       ]
     },
     {
@@ -777,13 +777,13 @@
       "category": "operations",
       "strict": false,
       "commands": [
-        "./commands/error-trace.md",
-        "./commands/error-analysis.md",
-        "./commands/smart-debug.md"
+        "./plugins/error-diagnostics/commands/error-trace.md",
+        "./plugins/error-diagnostics/commands/error-analysis.md",
+        "./plugins/error-diagnostics/commands/smart-debug.md"
       ],
       "agents": [
-        "./agents/debugger.md",
-        "./agents/error-detective.md"
+        "./plugins/error-diagnostics/agents/debugger.md",
+        "./plugins/error-diagnostics/agents/error-detective.md"
       ]
     },
     {
@@ -807,11 +807,11 @@
       "category": "operations",
       "strict": false,
       "commands": [
-        "./commands/debug-trace.md"
+        "./plugins/distributed-debugging/commands/debug-trace.md"
       ],
       "agents": [
-        "./agents/error-detective.md",
-        "./agents/devops-troubleshooter.md"
+        "./plugins/distributed-debugging/agents/error-detective.md",
+        "./plugins/distributed-debugging/agents/devops-troubleshooter.md"
       ]
     },
     {
@@ -839,20 +839,20 @@
       "category": "operations",
       "strict": false,
       "commands": [
-        "./commands/monitor-setup.md",
-        "./commands/slo-implement.md"
+        "./plugins/observability-monitoring/commands/monitor-setup.md",
+        "./plugins/observability-monitoring/commands/slo-implement.md"
       ],
       "agents": [
-        "./agents/observability-engineer.md",
-        "./agents/performance-engineer.md",
-        "./agents/database-optimizer.md",
-        "./agents/network-engineer.md"
+        "./plugins/observability-monitoring/agents/observability-engineer.md",
+        "./plugins/observability-monitoring/agents/performance-engineer.md",
+        "./plugins/observability-monitoring/agents/database-optimizer.md",
+        "./plugins/observability-monitoring/agents/network-engineer.md"
       ],
       "skills": [
-        "./skills/distributed-tracing",
-        "./skills/grafana-dashboards",
-        "./skills/prometheus-configuration",
-        "./skills/slo-implementation"
+        "./plugins/observability-monitoring/skills/distributed-tracing",
+        "./plugins/observability-monitoring/skills/grafana-dashboards",
+        "./plugins/observability-monitoring/skills/prometheus-configuration",
+        "./plugins/observability-monitoring/skills/slo-implementation"
       ]
     },
     {
@@ -878,8 +878,8 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/deployment-engineer.md",
-        "./agents/terraform-specialist.md"
+        "./plugins/deployment-strategies/agents/deployment-engineer.md",
+        "./plugins/deployment-strategies/agents/terraform-specialist.md"
       ]
     },
     {
@@ -903,10 +903,10 @@
       "category": "infrastructure",
       "strict": false,
       "commands": [
-        "./commands/config-validate.md"
+        "./plugins/deployment-validation/commands/config-validate.md"
       ],
       "agents": [
-        "./agents/cloud-architect.md"
+        "./plugins/deployment-validation/agents/cloud-architect.md"
       ]
     },
     {
@@ -933,13 +933,13 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/kubernetes-architect.md"
+        "./plugins/kubernetes-operations/agents/kubernetes-architect.md"
       ],
       "skills": [
-        "./skills/gitops-workflow",
-        "./skills/helm-chart-scaffolding",
-        "./skills/k8s-manifest-generator",
-        "./skills/k8s-security-policies"
+        "./plugins/kubernetes-operations/skills/gitops-workflow",
+        "./plugins/kubernetes-operations/skills/helm-chart-scaffolding",
+        "./plugins/kubernetes-operations/skills/k8s-manifest-generator",
+        "./plugins/kubernetes-operations/skills/k8s-security-policies"
       ]
     },
     {
@@ -967,18 +967,18 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/cloud-architect.md",
-        "./agents/kubernetes-architect.md",
-        "./agents/hybrid-cloud-architect.md",
-        "./agents/terraform-specialist.md",
-        "./agents/network-engineer.md",
-        "./agents/deployment-engineer.md"
+        "./plugins/cloud-infrastructure/agents/cloud-architect.md",
+        "./plugins/cloud-infrastructure/agents/kubernetes-architect.md",
+        "./plugins/cloud-infrastructure/agents/hybrid-cloud-architect.md",
+        "./plugins/cloud-infrastructure/agents/terraform-specialist.md",
+        "./plugins/cloud-infrastructure/agents/network-engineer.md",
+        "./plugins/cloud-infrastructure/agents/deployment-engineer.md"
       ],
       "skills": [
-        "./skills/cost-optimization",
-        "./skills/hybrid-cloud-networking",
-        "./skills/multi-cloud-architecture",
-        "./skills/terraform-module-library"
+        "./plugins/cloud-infrastructure/skills/cost-optimization",
+        "./plugins/cloud-infrastructure/skills/hybrid-cloud-networking",
+        "./plugins/cloud-infrastructure/skills/multi-cloud-architecture",
+        "./plugins/cloud-infrastructure/skills/terraform-module-library"
       ]
     },
     {
@@ -1003,20 +1003,20 @@
       "category": "infrastructure",
       "strict": false,
       "commands": [
-        "./commands/workflow-automate.md"
+        "./plugins/cicd-automation/commands/workflow-automate.md"
       ],
       "agents": [
-        "./agents/deployment-engineer.md",
-        "./agents/devops-troubleshooter.md",
-        "./agents/kubernetes-architect.md",
-        "./agents/cloud-architect.md",
-        "./agents/terraform-specialist.md"
+        "./plugins/cicd-automation/agents/deployment-engineer.md",
+        "./plugins/cicd-automation/agents/devops-troubleshooter.md",
+        "./plugins/cicd-automation/agents/kubernetes-architect.md",
+        "./plugins/cicd-automation/agents/cloud-architect.md",
+        "./plugins/cicd-automation/agents/terraform-specialist.md"
       ],
       "skills": [
-        "./skills/deployment-pipeline-design",
-        "./skills/github-actions-templates",
-        "./skills/gitlab-ci-patterns",
-        "./skills/secrets-management"
+        "./plugins/cicd-automation/skills/deployment-pipeline-design",
+        "./plugins/cicd-automation/skills/github-actions-templates",
+        "./plugins/cicd-automation/skills/gitlab-ci-patterns",
+        "./plugins/cicd-automation/skills/secrets-management"
       ]
     },
     {
@@ -1040,12 +1040,12 @@
       "category": "performance",
       "strict": false,
       "commands": [
-        "./commands/performance-optimization.md"
+        "./plugins/application-performance/commands/performance-optimization.md"
       ],
       "agents": [
-        "./agents/performance-engineer.md",
-        "./agents/frontend-developer.md",
-        "./agents/observability-engineer.md"
+        "./plugins/application-performance/agents/performance-engineer.md",
+        "./plugins/application-performance/agents/frontend-developer.md",
+        "./plugins/application-performance/agents/observability-engineer.md"
       ]
     },
     {
@@ -1069,13 +1069,13 @@
       "category": "performance",
       "strict": false,
       "commands": [
-        "./commands/cost-optimize.md"
+        "./plugins/database-cloud-optimization/commands/cost-optimize.md"
       ],
       "agents": [
-        "./agents/database-optimizer.md",
-        "./agents/database-architect.md",
-        "./agents/backend-architect.md",
-        "./agents/cloud-architect.md"
+        "./plugins/database-cloud-optimization/agents/database-optimizer.md",
+        "./plugins/database-cloud-optimization/agents/database-architect.md",
+        "./plugins/database-cloud-optimization/agents/backend-architect.md",
+        "./plugins/database-cloud-optimization/agents/cloud-architect.md"
       ]
     },
     {
@@ -1100,13 +1100,13 @@
       "category": "quality",
       "strict": false,
       "commands": [
-        "./commands/full-review.md",
-        "./commands/pr-enhance.md"
+        "./plugins/comprehensive-review/commands/full-review.md",
+        "./plugins/comprehensive-review/commands/pr-enhance.md"
       ],
       "agents": [
-        "./agents/code-reviewer.md",
-        "./agents/architect-review.md",
-        "./agents/security-auditor.md"
+        "./plugins/comprehensive-review/agents/code-reviewer.md",
+        "./plugins/comprehensive-review/agents/architect-review.md",
+        "./plugins/comprehensive-review/agents/security-auditor.md"
       ]
     },
     {
@@ -1129,12 +1129,12 @@
       "category": "quality",
       "strict": false,
       "commands": [
-        "./commands/ai-review.md",
-        "./commands/multi-agent-review.md"
+        "./plugins/performance-testing-review/commands/ai-review.md",
+        "./plugins/performance-testing-review/commands/multi-agent-review.md"
       ],
       "agents": [
-        "./agents/performance-engineer.md",
-        "./agents/test-automator.md"
+        "./plugins/performance-testing-review/agents/performance-engineer.md",
+        "./plugins/performance-testing-review/agents/test-automator.md"
       ]
     },
     {
@@ -1159,19 +1159,19 @@
       "category": "modernization",
       "strict": false,
       "commands": [
-        "./commands/legacy-modernize.md",
-        "./commands/code-migrate.md",
-        "./commands/deps-upgrade.md"
+        "./plugins/framework-migration/commands/legacy-modernize.md",
+        "./plugins/framework-migration/commands/code-migrate.md",
+        "./plugins/framework-migration/commands/deps-upgrade.md"
       ],
       "agents": [
-        "./agents/legacy-modernizer.md",
-        "./agents/architect-review.md"
+        "./plugins/framework-migration/agents/legacy-modernizer.md",
+        "./plugins/framework-migration/agents/architect-review.md"
       ],
       "skills": [
-        "./skills/angular-migration",
-        "./skills/database-migration",
-        "./skills/dependency-upgrade",
-        "./skills/react-modernization"
+        "./plugins/framework-migration/skills/angular-migration",
+        "./plugins/framework-migration/skills/database-migration",
+        "./plugins/framework-migration/skills/dependency-upgrade",
+        "./plugins/framework-migration/skills/react-modernization"
       ]
     },
     {
@@ -1195,13 +1195,13 @@
       "category": "modernization",
       "strict": false,
       "commands": [
-        "./commands/deps-audit.md",
-        "./commands/tech-debt.md",
-        "./commands/refactor-clean.md"
+        "./plugins/codebase-cleanup/commands/deps-audit.md",
+        "./plugins/codebase-cleanup/commands/tech-debt.md",
+        "./plugins/codebase-cleanup/commands/refactor-clean.md"
       ],
       "agents": [
-        "./agents/test-automator.md",
-        "./agents/code-reviewer.md"
+        "./plugins/codebase-cleanup/agents/test-automator.md",
+        "./plugins/codebase-cleanup/agents/code-reviewer.md"
       ]
     },
     {
@@ -1226,8 +1226,8 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/database-architect.md",
-        "./agents/sql-pro.md"
+        "./plugins/database-design/agents/database-architect.md",
+        "./plugins/database-design/agents/sql-pro.md"
       ]
     },
     {
@@ -1252,12 +1252,12 @@
       "category": "database",
       "strict": false,
       "commands": [
-        "./commands/sql-migrations.md",
-        "./commands/migration-observability.md"
+        "./plugins/database-migrations/commands/sql-migrations.md",
+        "./plugins/database-migrations/commands/migration-observability.md"
       ],
       "agents": [
-        "./agents/database-optimizer.md",
-        "./agents/database-admin.md"
+        "./plugins/database-migrations/agents/database-optimizer.md",
+        "./plugins/database-migrations/agents/database-admin.md"
       ]
     },
     {
@@ -1282,15 +1282,15 @@
       "category": "security",
       "strict": false,
       "commands": [
-        "./commands/security-hardening.md",
-        "./commands/security-sast.md",
-        "./commands/security-dependencies.md"
+        "./plugins/security-scanning/commands/security-hardening.md",
+        "./plugins/security-scanning/commands/security-sast.md",
+        "./plugins/security-scanning/commands/security-dependencies.md"
       ],
       "agents": [
-        "./agents/security-auditor.md"
+        "./plugins/security-scanning/agents/security-auditor.md"
       ],
       "skills": [
-        "./skills/sast-configuration"
+        "./plugins/security-scanning/skills/sast-configuration"
       ]
     },
     {
@@ -1316,10 +1316,10 @@
       "category": "security",
       "strict": false,
       "commands": [
-        "./commands/compliance-check.md"
+        "./plugins/security-compliance/commands/compliance-check.md"
       ],
       "agents": [
-        "./agents/security-auditor.md"
+        "./plugins/security-compliance/agents/security-auditor.md"
       ]
     },
     {
@@ -1345,8 +1345,8 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/backend-security-coder.md",
-        "./agents/backend-architect.md"
+        "./plugins/backend-api-security/agents/backend-security-coder.md",
+        "./plugins/backend-api-security/agents/backend-architect.md"
       ]
     },
     {
@@ -1371,12 +1371,12 @@
       "category": "security",
       "strict": false,
       "commands": [
-        "./commands/xss-scan.md"
+        "./plugins/frontend-mobile-security/commands/xss-scan.md"
       ],
       "agents": [
-        "./agents/frontend-security-coder.md",
-        "./agents/mobile-security-coder.md",
-        "./agents/frontend-developer.md"
+        "./plugins/frontend-mobile-security/agents/frontend-security-coder.md",
+        "./plugins/frontend-mobile-security/agents/mobile-security-coder.md",
+        "./plugins/frontend-mobile-security/agents/frontend-developer.md"
       ]
     },
     {
@@ -1402,7 +1402,7 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/backend-security-coder.md"
+        "./plugins/data-validation-suite/agents/backend-security-coder.md"
       ]
     },
     {
@@ -1429,13 +1429,13 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/backend-architect.md",
-        "./agents/graphql-architect.md",
-        "./agents/fastapi-pro.md",
-        "./agents/django-pro.md"
+        "./plugins/api-scaffolding/agents/backend-architect.md",
+        "./plugins/api-scaffolding/agents/graphql-architect.md",
+        "./plugins/api-scaffolding/agents/fastapi-pro.md",
+        "./plugins/api-scaffolding/agents/django-pro.md"
       ],
       "skills": [
-        "./skills/fastapi-templates"
+        "./plugins/api-scaffolding/skills/fastapi-templates"
       ]
     },
     {
@@ -1460,10 +1460,10 @@
       "category": "api",
       "strict": false,
       "commands": [
-        "./commands/api-mock.md"
+        "./plugins/api-testing-observability/commands/api-mock.md"
       ],
       "agents": [
-        "./agents/api-documenter.md"
+        "./plugins/api-testing-observability/agents/api-documenter.md"
       ]
     },
     {
@@ -1488,9 +1488,9 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/seo-content-writer.md",
-        "./agents/seo-content-planner.md",
-        "./agents/seo-content-auditor.md"
+        "./plugins/seo-content-creation/agents/seo-content-writer.md",
+        "./plugins/seo-content-creation/agents/seo-content-planner.md",
+        "./plugins/seo-content-creation/agents/seo-content-auditor.md"
       ]
     },
     {
@@ -1516,10 +1516,10 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/seo-meta-optimizer.md",
-        "./agents/seo-keyword-strategist.md",
-        "./agents/seo-structure-architect.md",
-        "./agents/seo-snippet-hunter.md"
+        "./plugins/seo-technical-optimization/agents/seo-meta-optimizer.md",
+        "./plugins/seo-technical-optimization/agents/seo-keyword-strategist.md",
+        "./plugins/seo-technical-optimization/agents/seo-structure-architect.md",
+        "./plugins/seo-technical-optimization/agents/seo-snippet-hunter.md"
       ]
     },
     {
@@ -1545,9 +1545,9 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/seo-content-refresher.md",
-        "./agents/seo-cannibalization-detector.md",
-        "./agents/seo-authority-builder.md"
+        "./plugins/seo-analysis-monitoring/agents/seo-content-refresher.md",
+        "./plugins/seo-analysis-monitoring/agents/seo-cannibalization-detector.md",
+        "./plugins/seo-analysis-monitoring/agents/seo-authority-builder.md"
       ]
     },
     {
@@ -1573,14 +1573,14 @@
       "category": "documentation",
       "strict": false,
       "commands": [
-        "./commands/doc-generate.md"
+        "./plugins/documentation-generation/commands/doc-generate.md"
       ],
       "agents": [
-        "./agents/docs-architect.md",
-        "./agents/api-documenter.md",
-        "./agents/mermaid-expert.md",
-        "./agents/tutorial-engineer.md",
-        "./agents/reference-builder.md"
+        "./plugins/documentation-generation/agents/docs-architect.md",
+        "./plugins/documentation-generation/agents/api-documenter.md",
+        "./plugins/documentation-generation/agents/mermaid-expert.md",
+        "./plugins/documentation-generation/agents/tutorial-engineer.md",
+        "./plugins/documentation-generation/agents/reference-builder.md"
       ]
     },
     {
@@ -1606,15 +1606,15 @@
       "category": "development",
       "strict": false,
       "commands": [
-        "./commands/multi-platform.md"
+        "./plugins/multi-platform-apps/commands/multi-platform.md"
       ],
       "agents": [
-        "./agents/mobile-developer.md",
-        "./agents/flutter-expert.md",
-        "./agents/ios-developer.md",
-        "./agents/frontend-developer.md",
-        "./agents/backend-architect.md",
-        "./agents/ui-ux-designer.md"
+        "./plugins/multi-platform-apps/agents/mobile-developer.md",
+        "./plugins/multi-platform-apps/agents/flutter-expert.md",
+        "./plugins/multi-platform-apps/agents/ios-developer.md",
+        "./plugins/multi-platform-apps/agents/frontend-developer.md",
+        "./plugins/multi-platform-apps/agents/backend-architect.md",
+        "./plugins/multi-platform-apps/agents/ui-ux-designer.md"
       ]
     },
     {
@@ -1641,7 +1641,7 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/business-analyst.md"
+        "./plugins/business-analytics/agents/business-analyst.md"
       ]
     },
     {
@@ -1669,8 +1669,8 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/hr-pro.md",
-        "./agents/legal-advisor.md"
+        "./plugins/hr-legal-compliance/agents/hr-pro.md",
+        "./plugins/hr-legal-compliance/agents/legal-advisor.md"
       ]
     },
     {
@@ -1696,8 +1696,8 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/customer-support.md",
-        "./agents/sales-automator.md"
+        "./plugins/customer-sales-automation/agents/customer-support.md",
+        "./plugins/customer-sales-automation/agents/sales-automator.md"
       ]
     },
     {
@@ -1722,8 +1722,8 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/content-marketer.md",
-        "./agents/search-specialist.md"
+        "./plugins/content-marketing/agents/content-marketer.md",
+        "./plugins/content-marketing/agents/search-specialist.md"
       ]
     },
     {
@@ -1751,13 +1751,13 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/blockchain-developer.md"
+        "./plugins/blockchain-web3/agents/blockchain-developer.md"
       ],
       "skills": [
-        "./skills/defi-protocol-templates",
-        "./skills/nft-standards",
-        "./skills/solidity-security",
-        "./skills/web3-testing"
+        "./plugins/blockchain-web3/skills/defi-protocol-templates",
+        "./plugins/blockchain-web3/skills/nft-standards",
+        "./plugins/blockchain-web3/skills/solidity-security",
+        "./plugins/blockchain-web3/skills/web3-testing"
       ]
     },
     {
@@ -1783,8 +1783,8 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/quant-analyst.md",
-        "./agents/risk-manager.md"
+        "./plugins/quantitative-trading/agents/quant-analyst.md",
+        "./plugins/quantitative-trading/agents/risk-manager.md"
       ]
     },
     {
@@ -1812,13 +1812,13 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/payment-integration.md"
+        "./plugins/payment-processing/agents/payment-integration.md"
       ],
       "skills": [
-        "./skills/billing-automation",
-        "./skills/paypal-integration",
-        "./skills/pci-compliance",
-        "./skills/stripe-integration"
+        "./plugins/payment-processing/skills/billing-automation",
+        "./plugins/payment-processing/skills/paypal-integration",
+        "./plugins/payment-processing/skills/pci-compliance",
+        "./plugins/payment-processing/skills/stripe-integration"
       ]
     },
     {
@@ -1845,8 +1845,8 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/unity-developer.md",
-        "./agents/minecraft-bukkit-pro.md"
+        "./plugins/game-development/agents/unity-developer.md",
+        "./plugins/game-development/agents/minecraft-bukkit-pro.md"
       ]
     },
     {
@@ -1871,10 +1871,10 @@
       "category": "accessibility",
       "strict": false,
       "commands": [
-        "./commands/accessibility-audit.md"
+        "./plugins/accessibility-compliance/commands/accessibility-audit.md"
       ],
       "agents": [
-        "./agents/ui-visual-validator.md"
+        "./plugins/accessibility-compliance/agents/ui-visual-validator.md"
       ]
     },
     {
@@ -1899,19 +1899,19 @@
       "category": "languages",
       "strict": false,
       "commands": [
-        "./commands/python-scaffold.md"
+        "./plugins/python-development/commands/python-scaffold.md"
       ],
       "agents": [
-        "./agents/python-pro.md",
-        "./agents/django-pro.md",
-        "./agents/fastapi-pro.md"
+        "./plugins/python-development/agents/python-pro.md",
+        "./plugins/python-development/agents/django-pro.md",
+        "./plugins/python-development/agents/fastapi-pro.md"
       ],
       "skills": [
-        "./skills/async-python-patterns",
-        "./skills/python-testing-patterns",
-        "./skills/python-packaging",
-        "./skills/python-performance-optimization",
-        "./skills/uv-package-manager"
+        "./plugins/python-development/skills/async-python-patterns",
+        "./plugins/python-development/skills/python-testing-patterns",
+        "./plugins/python-development/skills/python-packaging",
+        "./plugins/python-development/skills/python-performance-optimization",
+        "./plugins/python-development/skills/uv-package-manager"
       ]
     },
     {
@@ -1936,17 +1936,17 @@
       "category": "languages",
       "strict": false,
       "commands": [
-        "./commands/typescript-scaffold.md"
+        "./plugins/javascript-typescript/commands/typescript-scaffold.md"
       ],
       "agents": [
-        "./agents/javascript-pro.md",
-        "./agents/typescript-pro.md"
+        "./plugins/javascript-typescript/agents/javascript-pro.md",
+        "./plugins/javascript-typescript/agents/typescript-pro.md"
       ],
       "skills": [
-        "./skills/typescript-advanced-types",
-        "./skills/nodejs-backend-patterns",
-        "./skills/javascript-testing-patterns",
-        "./skills/modern-javascript-patterns"
+        "./plugins/javascript-typescript/skills/typescript-advanced-types",
+        "./plugins/javascript-typescript/skills/nodejs-backend-patterns",
+        "./plugins/javascript-typescript/skills/javascript-testing-patterns",
+        "./plugins/javascript-typescript/skills/modern-javascript-patterns"
       ]
     },
     {
@@ -1972,13 +1972,13 @@
       "category": "languages",
       "strict": false,
       "commands": [
-        "./commands/rust-project.md"
+        "./plugins/systems-programming/commands/rust-project.md"
       ],
       "agents": [
-        "./agents/rust-pro.md",
-        "./agents/golang-pro.md",
-        "./agents/c-pro.md",
-        "./agents/cpp-pro.md"
+        "./plugins/systems-programming/agents/rust-pro.md",
+        "./plugins/systems-programming/agents/golang-pro.md",
+        "./plugins/systems-programming/agents/c-pro.md",
+        "./plugins/systems-programming/agents/cpp-pro.md"
       ]
     },
     {
@@ -2005,9 +2005,9 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/java-pro.md",
-        "./agents/scala-pro.md",
-        "./agents/csharp-pro.md"
+        "./plugins/jvm-languages/agents/java-pro.md",
+        "./plugins/jvm-languages/agents/scala-pro.md",
+        "./plugins/jvm-languages/agents/csharp-pro.md"
       ]
     },
     {
@@ -2033,8 +2033,8 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/php-pro.md",
-        "./agents/ruby-pro.md"
+        "./plugins/web-scripting/agents/php-pro.md",
+        "./plugins/web-scripting/agents/ruby-pro.md"
       ]
     },
     {
@@ -2060,7 +2060,7 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/elixir-pro.md"
+        "./plugins/functional-programming/agents/elixir-pro.md"
       ]
     },
     {
@@ -2088,7 +2088,7 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/arm-cortex-expert.md"
+        "./plugins/arm-cortex-microcontrollers/agents/arm-cortex-expert.md"
       ]
     },
     {
@@ -2116,13 +2116,13 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./agents/bash-pro.md",
-        "./agents/posix-shell-pro.md"
+        "./plugins/shell-scripting/agents/bash-pro.md",
+        "./plugins/shell-scripting/agents/posix-shell-pro.md"
       ],
       "skills": [
-        "./skills/bash-defensive-patterns/SKILL.md",
-        "./skills/shellcheck-configuration/SKILL.md",
-        "./skills/bats-testing-patterns/SKILL.md"
+        "./plugins/shell-scripting/skills/bash-defensive-patterns/SKILL.md",
+        "./plugins/shell-scripting/skills/shellcheck-configuration/SKILL.md",
+        "./plugins/shell-scripting/skills/bats-testing-patterns/SKILL.md"
       ]
     },
     {
@@ -2139,17 +2139,7 @@
         "workflow",
         "automation"
       ],
-      "strict": false,
-      "commands": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/git/feature.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/git/release.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/git/hotfix.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/git/finish.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/git/flow-status.md"
-      ],
-      "agents": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/git/git-flow-manager.md"
-      ]
+      "strict": false
     },
     {
       "name": "supabase-toolkit",
@@ -2166,23 +2156,7 @@
         "postgresql",
         "data"
       ],
-      "strict": false,
-      "commands": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/database/supabase-backup-manager.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/database/supabase-data-explorer.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/database/supabase-migration-assistant.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/database/supabase-performance-optimizer.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/database/supabase-schema-sync.md"
-      ],
-      "agents": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/data-ai/data-engineer.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/data-ai/data-scientist.md"
-      ],
-      "mcpServers": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/mcps/database/postgresql-integration.json",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/mcps/database/mysql-integration.json",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/mcps/database/supabase.json"
-      ]
+      "strict": false
     },
     {
       "name": "nextjs-vercel-pro",
@@ -2200,23 +2174,7 @@
         "deployment",
         "performance"
       ],
-      "strict": false,
-      "commands": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/nextjs-vercel/nextjs-scaffold.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/nextjs-vercel/nextjs-component-generator.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/nextjs-vercel/nextjs-api-tester.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/nextjs-vercel/nextjs-performance-audit.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/nextjs-vercel/vercel-deploy-optimize.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/nextjs-vercel/vercel-edge-function.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/nextjs-vercel/vercel-env-sync.md"
-      ],
-      "agents": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/development-team/frontend-developer.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/development-team/fullstack-developer.md"
-      ],
-      "mcpServers": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/mcps/devtools/vercel-mcp.json"
-      ]
+      "strict": false
     },
     {
       "name": "testing-suite",
@@ -2234,23 +2192,7 @@
         "automation",
         "quality"
       ],
-      "strict": false,
-      "commands": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/testing/generate-tests.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/testing/e2e-setup.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/testing/test-coverage.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/testing/setup-visual-testing.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/testing/setup-load-testing.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/testing/test-automation-orchestrator.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/testing/test-quality-analyzer.md"
-      ],
-      "agents": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/development-tools/qa-automation-engineer.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/development-tools/test-engineer.md"
-      ],
-      "mcpServers": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/mcps/browser_automation/playwright-mcp.json"
-      ]
+      "strict": false
     },
     {
       "name": "security-pro",
@@ -2268,19 +2210,7 @@
         "pentesting",
         "vulnerability"
       ],
-      "strict": false,
-      "commands": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/security/security-audit.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/security/vulnerability-scan.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/security/dependency-audit.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/security/code-security-review.md"
-      ],
-      "agents": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/security/security-auditor.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/security/penetration-tester.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/security/compliance-specialist.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/security/incident-responder.md"
-      ]
+      "strict": false
     },
     {
       "name": "ai-ml-toolkit",
@@ -2298,14 +2228,7 @@
         "data-science",
         "nlp"
       ],
-      "strict": false,
-      "agents": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/data-ai/ai-engineer.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/data-ai/ml-engineer.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/data-ai/nlp-engineer.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/data-ai/computer-vision-engineer.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/data-ai/mlops-engineer.md"
-      ]
+      "strict": false
     },
     {
       "name": "devops-automation",
@@ -2323,24 +2246,7 @@
         "deployment",
         "automation"
       ],
-      "strict": false,
-      "commands": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/deployment/setup-ci-cd-pipeline.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/deployment/docker-compose-setup.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/deployment/kubernetes-deploy.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/deployment/monitoring-setup.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/deployment/backup-strategy.md"
-      ],
-      "agents": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/devops-infrastructure/devops-engineer.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/devops-infrastructure/cloud-architect.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/devops-infrastructure/kubernetes-specialist.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/devops-infrastructure/infrastructure-engineer.md"
-      ],
-      "mcpServers": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/mcps/devtools/github-integration.json",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/mcps/devtools/docker-mcp.json"
-      ]
+      "strict": false
     },
     {
       "name": "documentation-generator",
@@ -2357,22 +2263,7 @@
         "technical-writing",
         "markdown"
       ],
-      "strict": false,
-      "commands": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/documentation/generate-api-docs.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/documentation/update-docs.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/documentation/create-user-guide.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/documentation/setup-docusaurus.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/documentation/generate-changelog.md"
-      ],
-      "agents": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/documentation/technical-writer.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/documentation/api-documentation-specialist.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/documentation/docusaurus-expert.md"
-      ],
-      "mcpServers": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/mcps/filesystem/filesystem.json"
-      ]
+      "strict": false
     },
     {
       "name": "performance-optimizer",
@@ -2390,19 +2281,7 @@
         "speed",
         "bundle"
       ],
-      "strict": false,
-      "commands": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/performance/optimize-bundle.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/performance/performance-audit.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/performance/add-caching.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/performance/optimize-images.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/performance/reduce-bundle-size.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/performance/add-lazy-loading.md"
-      ],
-      "agents": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/performance-testing/performance-engineer.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/performance-testing/load-testing-specialist.md"
-      ]
+      "strict": false
     },
     {
       "name": "project-management-suite",
@@ -2420,24 +2299,7 @@
         "planning",
         "collaboration"
       ],
-      "strict": false,
-      "commands": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/project-management/sprint-planning.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/project-management/create-roadmap.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/project-management/task-breakdown.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/project-management/estimate-project.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/project-management/standup-generator.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/commands/project-management/retrospective-facilitator.md"
-      ],
-      "agents": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/business-marketing/product-strategist.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/business-marketing/business-analyst.md",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/agents/development-team/tech-lead.md"
-      ],
-      "mcpServers": [
-        "./plugins/davila7-claude-code-templates/cli-tool/components/mcps/productivity/notion-integration.json",
-        "./plugins/davila7-claude-code-templates/cli-tool/components/mcps/productivity/linear-integration.json"
-      ]
+      "strict": false
     }
   ]
 }

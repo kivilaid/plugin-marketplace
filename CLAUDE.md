@@ -5,20 +5,42 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Repository Purpose
 
 This is a **plugin marketplace** for Claude Code, not a traditional codebase. It contains:
-- Plugin definitions in `.claude-plugin/marketplace.json` (87 total plugins)
-- Plugin components (commands, agents, hooks, MCP servers) and skills in `plugins/` (103 total directories)
+
+### Statistics
+- **87 Total Plugins** in `.claude-plugin/marketplace.json`
+- **103 Plugin Directories** in `plugins/` containing commands, agents, hooks, MCP servers, and skills
+- **100+ Specialized Agents** for code review, testing, deployment, security, and documentation
+- **44 Custom Tools** extending Claude with domain-specific capabilities
+- **10+ Sources** from Anthropic, community contributors, and open-source repositories
+
+### Plugin Breakdown by Source
+
+1. **Official Anthropic Plugins (5)** from anthropics/claude-code:
+   - agent-sdk-dev, pr-review-toolkit, commit-commands, feature-dev, security-guidance
+
+2. **wshobson Specialized Agents (64)** from wshobson/agents:
+   - Comprehensive coverage of development, testing, DevOps, data/AI, security, documentation, and specialized workflows
+   - 87 specialized agents and 44 custom tools
+   - Categories: Development, Testing, DevOps, Data/AI, Security, Documentation, Operations, Performance, Languages
+
+3. **davila7 Comprehensive Toolkits (10)** from davila7/claude-code-templates:
+   - git-workflow, supabase-toolkit, nextjs-vercel-pro, testing-suite, security-pro
+   - ai-ml-toolkit, devops-automation, documentation-generator, performance-optimizer, project-management-suite
+
+4. **Community Skills (8 collections)**:
+   - **Document Skills (1)**: xlsx, docx, pptx, pdf from Anthropic's skills repository
+   - **Example Skills (1)**: Creative, development, and enterprise capabilities
+   - **Development Workflow (1)** from obra/superpowers: TDD, git worktrees, branch completion, root cause tracing, brainstorming, systematic debugging (6 skills)
+   - **Content & Productivity (1)** from michalparkola/ComposioHQ: Article extraction, YouTube transcripts, research writing, workflow optimization (5 skills)
+   - **Media & Data Processing (1)** from ComposioHQ/coffeefuelbump: Video download, image enhancement, CSV analysis, meeting insights (4 skills)
+   - **Organization Tools (1)** from ComposioHQ: File management, invoice processing (2 skills)
+   - **Engineering Workflows (1)** from mhattingpete: Git operations, code review implementation, test fixing (3 skills)
+
+### Infrastructure Components
 - GitHub Actions workflow using Claude Code Action in `.github/workflows/claude.yml`
 - MCP server configuration in `.mcp.json` (auto-detected by Claude Code Action)
-- **Official Anthropic plugins** from claude-code repository (5 plugins: agent-sdk-dev, pr-review-toolkit, commit-commands, feature-dev, security-guidance)
-- **wshobson specialized agents** from wshobson/agents (64 plugins covering all aspects of modern development)
-- **davila7 comprehensive toolkits** from davila7/claude-code-templates (10 toolkits for Git, Supabase, Next.js, testing, security, AI/ML, DevOps, documentation, performance, project management)
-- Document processing skills (xlsx, docx, pptx, pdf) from Anthropic's skills repository
-- Example skills demonstrating creative, development, and enterprise capabilities
-- **Development workflow skills** from obra/superpowers (6 skills: TDD, git worktrees, branch completion, root cause tracing, brainstorming, systematic debugging)
-- **Content & productivity skills** from michalparkola/tapestry-skills and ComposioHQ/awesome-claude-skills (5 skills)
-- **Media & data processing tools** from ComposioHQ/awesome-claude-skills and coffeefuelbump (4 skills)
-- **Organization tools** from ComposioHQ/awesome-claude-skills (2 skills)
-- **Engineering workflow tools** from mhattingpete/claude-skills-marketplace (3 skills)
+  - context7: Documentation retrieval
+  - playwright: Browser automation
 
 ## Architecture
 

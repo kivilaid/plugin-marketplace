@@ -1,29 +1,61 @@
 # Claude Code Plugin Marketplace
 
-A comprehensive Claude Code plugin marketplace with **100+ plugins and skills** featuring official Anthropic tools, specialized agents, community skills, and workflow automation for every development need.
+A comprehensive Claude Code plugin marketplace with **87 plugins** from 10+ sources, featuring official Anthropic tools, specialized agents, community skills, and workflow automation.
 
-## Overview
+## Quick Stats
 
-This marketplace provides production-ready plugins and skills for Claude Code, featuring:
+- **87 Total Plugins** across development, testing, DevOps, security, data/AI, and more
+- **103 Plugin Directories** with commands, agents, hooks, and MCP servers
+- **10+ Sources** including Anthropic, wshobson, davila7, obra, and community contributors
+- **100+ Specialized Agents** for code review, testing, deployment, security, and documentation
+- **44 Custom Tools** extending Claude with domain-specific capabilities
 
-- **Official Anthropic Plugins** - Agent SDK development, PR review toolkit, commit workflows, feature development, and security guidance
-- **wshobson Specialized Agents (64 plugins)** - Production-ready workflow orchestration covering development, testing, DevOps, data/AI, security, documentation, and more
-- **davila7 Comprehensive Toolkits (10 plugins)** - Ready-to-use templates for Git, Supabase, Next.js/Vercel, testing, security, AI/ML, DevOps, documentation, performance, and project management
-- **Development Workflow Skills** - TDD, git worktrees, debugging, brainstorming, and root cause analysis from obra/superpowers
-- **Content & Productivity Skills** - Article extraction, YouTube transcripts, research writing, and workflow optimization
-- **Media & Data Processing** - Video download, image enhancement, CSV analysis, and meeting insights
-- **Organization Tools** - File management and invoice processing automation
-- **Engineering Workflows** - Git operations, code review implementation, and test fixing automation
-- **Document Processing** - Create and edit Excel, Word, PowerPoint, and PDF files
-- **Creative & Design** - Generate algorithmic art, canvas designs, and Slack GIFs
-- **Development Tools** - MCP server building, web app testing, and artifact creation
-- **Code Review Agents** - Comprehensive PR review with specialized agents for comments, tests, errors, types, quality, and simplification
-- **Enterprise Skills** - Internal communications, brand guidelines, and theme styling
-- **Security Features** - Automatic security warnings for common vulnerabilities and unsafe patterns
-- **MCP Server Examples** - Reference implementation for custom integrations
-- **Browser Automation** - Playwright MCP integration for web testing and automation
+## Plugin Categories
 
-Perfect for teams and individuals wanting to boost productivity with automated workflows, AI-powered code assistance, official Anthropic tooling, and specialized skills.
+| Category | Count | Key Features |
+|----------|-------|--------------|
+| **Official Anthropic** | 5 | Agent SDK, PR review, commits, feature dev, security |
+| **wshobson Agents** | 64 | Development, testing, DevOps, data/AI, security, docs |
+| **davila7 Toolkits** | 10 | Git, Supabase, Next.js, testing, security, AI/ML, DevOps |
+| **Community Skills** | 8 | Workflows, productivity, media processing, organization |
+
+## What's Inside
+
+### Development & Testing
+- Full-stack development (backend, frontend, mobile, API design)
+- TDD workflows, unit testing, E2E automation
+- Code review, refactoring, debugging
+- Framework migration and modernization
+
+### DevOps & Infrastructure
+- CI/CD automation (GitHub Actions, GitLab CI)
+- Cloud infrastructure (AWS, Azure, GCP)
+- Kubernetes operations and GitOps
+- Deployment strategies and monitoring
+
+### Data & AI/ML
+- Data engineering and ETL pipelines
+- Machine learning operations (MLOps)
+- LLM application development
+- Quantitative trading and analytics
+
+### Security & Compliance
+- SAST analysis and vulnerability scanning
+- SOC2, HIPAA, GDPR compliance
+- API security and penetration testing
+- Security auditing and incident response
+
+### Documentation & Content
+- API documentation generation
+- Technical writing and tutorials
+- SEO optimization and content marketing
+- Mermaid diagrams and OpenAPI specs
+
+### Specialized
+- Blockchain/Web3 development
+- Game development (Unity, Minecraft)
+- Payment processing (Stripe, PayPal)
+- Accessibility compliance (WCAG)
 
 ## MCP Server Integration
 
@@ -43,7 +75,7 @@ Configuration is managed in `.mcp.json` at the repository root, which is automat
 
 ## Quick Start
 
-### Add this marketplace to Claude Code
+### 1. Add Marketplace
 
 ```bash
 # Add from GitHub
@@ -53,58 +85,40 @@ Configuration is managed in `.mcp.json` at the repository root, which is automat
 /plugin marketplace add /path/to/plugin-marketplace
 ```
 
-### Install plugins
+### 2. Install Plugins by Use Case
 
+#### Essential Development Tools
 ```bash
-# Install document processing skills
-/plugin install document-skills@example-marketplace
-
-# Install example skills collection
-/plugin install example-skills@example-marketplace
-
-# Install full-featured productivity plugin
-/plugin install example-full-featured@example-marketplace
-
-# Install Anthropic official plugins
-/plugin install agent-sdk-dev@example-marketplace
-/plugin install pr-review-toolkit@example-marketplace
-/plugin install commit-commands@example-marketplace
-/plugin install feature-dev@example-marketplace
-/plugin install security-guidance@example-marketplace
-
-# Install development workflow skills
-/plugin install development-workflow-skills@example-marketplace
-
-# Install content & productivity skills
-/plugin install content-productivity-skills@example-marketplace
-
-# Install media & data processing tools
-/plugin install media-data-tools@example-marketplace
-
-# Install organization tools
-/plugin install organization-tools@example-marketplace
-
-# Install engineering workflow tools
-/plugin install engineering-workflow-tools@example-marketplace
-
-# Install wshobson specialized agents (64 plugins available)
-/plugin install code-documentation@claude-code-workflows
-/plugin install debugging-toolkit@claude-code-workflows
-/plugin install git-pr-workflows@claude-code-workflows
-# ... and 61 more specialized agent plugins
-
-# Install davila7 comprehensive toolkits (10 available)
-/plugin install git-workflow@claude-code-templates
-/plugin install supabase-toolkit@claude-code-templates
-/plugin install nextjs-vercel-pro@claude-code-templates
-/plugin install testing-suite@claude-code-templates
-/plugin install security-pro@claude-code-templates
-/plugin install ai-ml-toolkit@claude-code-templates
-/plugin install devops-automation@claude-code-templates
-/plugin install documentation-generator@claude-code-templates
-/plugin install performance-optimizer@claude-code-templates
-/plugin install project-management-suite@claude-code-templates
+# Official Anthropic plugins
+/plugin install commit-commands@example-marketplace      # Git workflows
+/plugin install pr-review-toolkit@example-marketplace    # PR reviews
+/plugin install feature-dev@example-marketplace          # Feature development
+/plugin install security-guidance@example-marketplace    # Security warnings
 ```
+
+#### Full-Stack Development
+```bash
+# davila7 comprehensive toolkits
+/plugin install git-workflow@example-marketplace         # Git automation
+/plugin install nextjs-vercel-pro@example-marketplace    # Next.js + Vercel
+/plugin install testing-suite@example-marketplace        # Testing automation
+/plugin install devops-automation@example-marketplace    # CI/CD + Docker + K8s
+```
+
+#### Data & Database
+```bash
+/plugin install supabase-toolkit@example-marketplace     # Supabase workflows
+/plugin install ai-ml-toolkit@example-marketplace        # AI/ML development
+```
+
+#### Productivity & Documentation
+```bash
+/plugin install document-skills@example-marketplace      # Excel, Word, PDF, PPT
+/plugin install documentation-generator@example-marketplace  # API docs + guides
+```
+
+#### Browse All Plugins
+See the [Complete Plugin List](#available-plugins) below for all 87 plugins organized by category.
 
 ## Available Plugins
 
