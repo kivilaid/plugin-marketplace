@@ -7,11 +7,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 This is a **plugin marketplace** for Claude Code, not a traditional codebase. It contains:
 
 ### Statistics
-- **87 Total Plugins** in `.claude-plugin/marketplace.json`
+- **77 Total Plugins** in `.claude-plugin/marketplace.json`
 - **103 Plugin Directories** in `plugins/` containing commands, agents, hooks, MCP servers, and skills
 - **100+ Specialized Agents** for code review, testing, deployment, security, and documentation
 - **44 Custom Tools** extending Claude with domain-specific capabilities
-- **10+ Sources** from Anthropic, community contributors, and open-source repositories
+- **9+ Sources** from Anthropic, community contributors, and open-source repositories
 
 ### Plugin Breakdown by Source
 
@@ -23,11 +23,7 @@ This is a **plugin marketplace** for Claude Code, not a traditional codebase. It
    - 87 specialized agents and 44 custom tools
    - Categories: Development, Testing, DevOps, Data/AI, Security, Documentation, Operations, Performance, Languages
 
-3. **davila7 Comprehensive Toolkits (10)** from davila7/claude-code-templates:
-   - git-workflow, supabase-toolkit, nextjs-vercel-pro, testing-suite, security-pro
-   - ai-ml-toolkit, devops-automation, documentation-generator, performance-optimizer, project-management-suite
-
-4. **Community Skills (8 collections)**:
+3. **Community Skills (8 collections)**:
    - **Document Skills (1)**: xlsx, docx, pptx, pdf from Anthropic's skills repository
    - **Example Skills (1)**: Creative, development, and enterprise capabilities
    - **Development Workflow (1)** from obra/superpowers: TDD, git worktrees, branch completion, root cause tracing, brainstorming, systematic debugging (6 skills)
